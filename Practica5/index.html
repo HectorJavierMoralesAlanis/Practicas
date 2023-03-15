@@ -9,42 +9,31 @@
 </head>
 <body>
     <fieldset>
-        <div class="solicitudEmpleo">
-            <article >
-                <h2 style="text-align:center;">Solicitud de empleo</h2>
-                <label for="puesto" class="linea">Puesto que esta solicitando</label><br>
-                <input class="inputS" id="puesto">
-            </article>
-            <article class="sEmpB">
-                <p class="bor">
-                    <label for="fecha">Fecha</label>
-                </p>
-                <p class="bora">
-                    <input type="date" id="fecha" class="inputFS">
-                </p>
-                <p class="bora">
-                    <label for="sueldoD">Sueldo mensual deseado</label>
-                </p>
-                <p class="bora">
-                    <input type="number" id="sueldoD" class="inputFS">
-                </p>
-                <p class="bora">
-                    <label for="sueldoA">Sueldo mensual autorizado</label>
-                </p>
-                <p class="bora">
-                    <input type="number" id="sueldoA" class="inputFS">
-                </p>
-                <p class="bora">
-                    <label for="fechaC">Fecha de contratacion</label>
-                <p class="borar">
-                    <input type="date" id="fechaC" class="inputFS">
-                </p>
-            </article>
-            <article class="sEmpB">
-
-            </article>
+        <div>
+        <!-------------Hector Solicitud de empleo-------------------->
+            <table>
+                <h2 class="titulotable">Solicitud de Empleo</h2>
+                <thead>
+                    <tr>
+                        <th><label for="solicitudEmp">Solicitud de empleo</label></th>
+                        <th><label for="fecha">Fecha</label></th>
+                        <th><label for="sueldoMensualD">Sueldo mensual deseado</label></th>
+                        <th><label for="sueldoMensualA">Sueldo mensual autorizado</label></th>
+                        <th><label for="fechaContratacion">Fecha de contratacion</label></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" id="solicitudEmp"></td>
+                        <td><input type="date" id="fecha"></td>
+                        <td><input type="number" id="sueldoMensualD"></td>
+                        <td><input type="number" id="sueldoMensualA"></td>
+                        <td><input type="date" id="fechaContratacion"></td>
+                </tbody>
+            </table>
         </div>
     </fieldset>
+    <br>
     <fieldset>
         <h2>Documentacion</h2>
         <div>
