@@ -1,0 +1,90 @@
+.solicitudEmpleo{
+    max-width: 120rem;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    margin: 0 auto;
+}
+
+.columnasD2{
+    max-width: 120rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 auto;
+}
+
+.columnasD4{
+    max-width: 120rem;
+    display: grid;
+    grid-template-columns: 45% 15% 20% 20%;
+    margin: 0 auto;
+}
+
+.columnasD3{
+    max-width: 120rem;
+    display: grid;
+    grid-template-columns: 45% 20% 35%;
+    margin: 0 auto;
+}
+
+h2{
+    border-bottom: 5px solid #000000;
+    margin:0 auto;
+}
+
+.inputS{
+    width: 730px;
+    height: 250px;
+}
+
+.inputFS{
+    width:356px;
+}
+
+.bor{
+    width: 366px;
+    height: 30px;
+    border-top: 5px solid #000000;
+    border-bottom:5px solid #000000;
+}
+
+.bora{
+    width: 366px;
+    height: 30px;
+    border-bottom: 5px solid #000000;
+}
+
+.borar{
+    width:366px;
+    height:30px;
+    border-bottom:5px solid #000000;
+}
+
+fieldset{
+    border: 5px solid #000000;
+}
+
+.sEmpB{
+    border-left:5px solid #000000; 
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+input[type=text] {
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.titulotable{
+    Color: rgb(255, 0, 0);
+}
