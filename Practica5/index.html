@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="container">
     <fieldset>
         <div>
         <!-------------Hector Solicitud de empleo-------------------->
-            <table>
-                <h2 class="titulotable" style="text-align:center;">Solicitud de Empleo</h2>
+            <table class="table table-hover table-bordered">
+                <h2 class="p-4 mb-2 bg-info bg-gradient text-white" style="text-align:center;">Solicitud de Empleo</h2>
                 <thead>
                     <tr>
                         <th><label for="solicitudEmp">Solicitud de empleo</label></th>
@@ -29,17 +31,16 @@
                         <td><input type="number" id="sueldoMensualD"></td>
                         <td><input type="number" id="sueldoMensualA"></td>
                         <td><input type="date" id="fechaContratacion"></td>
+                    </tr>
                 </tbody>
             </table>
         </div>
     </fieldset>
     <br>
     <fieldset>
-        <h2>Documentacion</h2>
+        <h2 class="p-4 mb-2 bg-info bg-gradient text-white" style="text-align:center;">Datos personales</h2>
         <div>
             <table>
-                <caption class="titulotable">Datos personales</caption>
-    
                 <thead>
                     <tr>
                         <th>Apellido Patrno</th>
@@ -64,9 +65,10 @@
             </table>
         </div>
     </fieldset>
+    <br>
     <!-- Javier Documentacion-->
     <fieldset>
-        <h2 class="titulotable" style="text-align:center;">Documentacion</h2>
+        <h2 class="p-4 mb-2 text-white bg-info bg-gradient" style="text-align:center;">Documentacion</h2>
         <div>
             <table>
                 <thead>
@@ -100,14 +102,39 @@
             </table>
         </div>
     </fieldset>
+    <br>
     <!-- Humberto Estado de salud y habitos personales-->
     <fieldset>
-        <h2 class="titulotable" style="text-align:center;">Estado de salud y habitos personales</h2>
+        <h2 class="p-4 mb-2 bg-info bg-gradient text-white" style="text-align:center;">Estado de salud y habitos personales</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th><label>¿Cómo considera su estado de salud actual?</label> </th>
+                    <th><label>¿Padece alguna enfermedad crónica? </label></th>
+                    <th>¿Practica usted algún deporte?</th>
+                    <th>¿Pertenece a algún Club Social o Deportivo?</th>
+                    <th>¿En qué ocupa su tiempo libre?</th>
+                    <th>¿Cuál es su meta en la vida?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" id="SaludActual" placeholder="Cómo considera su estado de salud actual">
+                    </td>
+                    <td><input type="text" id="EnferCronica" placeholder="Padece alguna enfermedad crónica"></td>
+                    <td><input type="text" id="Deporte" placeholder="Practica usted algún deporte"></td>
+                    <td><input type="text" id="PerteneAclub"
+                            placeholder="Pertenece a algún Club Social o Deportivo"></td>
+                    <td><input type="text" id="TiempoLibre" placeholder="En qué ocupa su tiempo libre"></td>
+                    <td><input type="text" id="MetaVida" placeholder="Cuál es su meta en la vida"></td>
+            </tbody>
+        </table>
     </fieldset>
+    <br>
     <!-- Javier Datos Familiares-->
     <fieldset>
-        <h2 class="titulotable" style="text-align:center;">Datos Familiares</h2>
-        <table>
+        <h2 class="p-4 mb-2 bg-info bg-gradient text-white" style="text-align:center;">Datos Familiares</h2>
+        <table class="table table-bordered table-hover">
             <thead>
                 <th><label>Nombre (Sólo nombre sin apellidos)</label></th>
                 <th><label>Vive</label></th>
@@ -137,21 +164,111 @@
                 <td><br><input type="text" id="ocupacionEs"></td>
             </tbody>
         </table>
-        <table>
+        <table class="table table-bordered table-hover">
             <thead>
                 <th><label>Nombre y edades de los hijos: </label></th>
                 <th><input type="text" id="hijos"></th>
             </thead>
         </table>
     </fieldset>
+    <br>
     <!-- Humberto Escolaridad-->
     <fieldset>
-        <h2 class="titulotable" style="text-align:center;">Escolaridad</h2>
+        <h2 class="p-4 mb-2 bg-secondary bg-info text-white" style="text-align:center;">Escolaridad</h2>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Nombre de la escuela</th>
+                    <th>Domicilio</th>
+                    <th>Fecha DE</th>
+                    <th>Fecha A</th>
+                    <th>Años</th>
+                    <th>Título Recibido</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Primaria: <input type="text1" id="primaria" placeholder="primaria"></th>
+                    <td><input type="text" id="DomicilioPrim" placeholder="Domicilio"></td>
+
+                    <th><input type="date" id="fechaPrimaria"></th>
+                    <th><input type="date" id="fechaPrimaria2"></th>
+
+                    <td><input type="number1" id="años1" placeholder="Años"></td>
+
+                    <td><input type="text" id="TituloPrimaria" placeholder="Titulo Recibido"></td>
+
+                </tr>
+                <tr>
+                    <th>Secundaria: <input type="text1" id="Secundaria" placeholder="Secundaria"></th>
+                    <td><input type="text" id="DomicilioSec" placeholder="Domicilio"></td>
+
+                    <th><input type="date" id="fechaSecundaria"></th>
+                    <th><input type="date" id="fechaSecundaria2"></th>
+
+                    <td><input type="number1" id="años2" placeholder="Años"></td>
+
+                    <td><input type="text" id="TituloSecundaria" placeholder="Titulo Recibido"></td>
+
+
+                </tr>
+                <tr>
+                    <th>Preparatoria o Vocacional: <input type="text1" id="Preparatoria" placeholder="Preparatoria">
+                    </th>
+                    <td><input type="text" id="Domiciliobachi" placeholder="Domicilio"></td>
+
+                    <th><input type="date" id="fechaPrepa"></th>
+                    <th><input type="date" id="fechaPrepa2"></th>
+
+                    <td><input type="number1" id="años3" placeholder="Años"></td>
+
+                    <td><input type="text" id="TituloPrepa" placeholder="Titulo Recibido"></td>
+
+                </tr>
+                <tr>
+                    <th>Profesional: <input type="text1" id="Profesional" placeholder="Profesional"></th>
+                    <td><input type="text" id="DomicilioProfe" placeholder="Domicilio"></td>
+
+                    <th><input type="date" id="fechaProfec"></th>
+                    <th><input type="date" id="fechaProfec2"></th>
+
+                    <td><input type="number1" id="años4" placeholder="Años"></td>
+
+                    <td><input type="text" id="TituloProfecional" placeholder="Titulo Recibido"></td>
+
+                </tr>
+                <tr>
+                    <th>Comercial: <input type="text1" id="Comercial" placeholder="Comercial"></th>
+                    <td><input type="text" id="DomicilioComercia" placeholder="Domicilio"></td>
+
+                    <th><input type="date" id="fechaComer"></th>
+                    <th><input type="date" id="fechaComer2"></th>
+
+                    <td><input type="number1" id="años5" placeholder="Años"></td>
+
+                    <td><input type="text" id="TituloComercial" placeholder="Titulo Recibido"></td>
+                </tr>
+                <br>
+                </tr>
+                <tr>
+                    <th class="titulotable">Estudios que está efectuando en la actualidad</th>
+                    </center>
+                </tr>
+                <tr>
+                    <th>escuela: <input type="text" id="EscuelaActual" placeholder="Escuela"></th>
+                    <th>Horario: <input type="text" id="Horario" placeholder="Horario"></th>
+                    <th>Curso o carrera: <input type="text" id="CursoCarrera" placeholder="Curso o carrera"></th>
+                    <th>Grado: <input type="text" id="Grado" placeholder="Grado"></th>
+
+                </tr>
+            </tbody>
+        </table>
     </fieldset>
+    <br>
     <!-- Javier Conocimientos generales-->
     <fieldset>
-        <h2 class="titulotable" style="text-align:center;">Conocimientos Genreales</h2>
-        <table>
+        <h2 class="p-4 mb-2 bg-info bg-gradient text-white" style="text-align:center;">Conocimientos Generales</h2>
+        <table class="table table-hover table-bordered">
             <thead>
                 <th><label for="idiomas">Idiomas que domina</label></th>
                 <th><label for="funcionesO">Funciones de oficina que domina</label></th>
@@ -166,14 +283,96 @@
             </tbody>
         </table>
     </fieldset>
+    <br>
     <!-- Humberto Empleo actual o anteriores-->
     <fieldset>
-        <h2 class="titulotable" style="text-align:center;">Empleo Actual O Anteriores</h2>
+        <h2 class="p-4 mb-2 bg-info bg-gradient text-white" style="text-align:center;">Empleo Actual O Anteriores</h2>
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>Concepto</th>
+                    <th>Empleo actual o último</th>
+                    <th>Empleo anterior</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Tiempo que prestó sus servicios:
+                    <td><input type="text" id="TimeService" placeholder="Tiempo de servicios"></td>
+
+                    <td><input type="text" id="TimeServiceAnt" placeholder="Tiempo de servicios"></td>
+                </tr>
+                <tr>
+                    <th>Nombre de la Empresa:</th>
+                    <td><input type="text" id="NomEmpresa" placeholder="Nombre Empresa"></td>
+
+                    <td><input type="text" id="NomEmpresaAnt" placeholder="Nombre Empresa"></td>
+                </tr>
+                <tr>
+                    <th>Domicilio:</th>
+                    <td><input type="text" id="DomicilioEmpresa" placeholder="Domicilio"></td>
+
+                    <td><input type="text" id="DomicilioEmpresaAnt" placeholder="Domicilio"></td>
+
+                </tr>
+                <tr>
+                    <th>Teléfono:</th>
+                    <td><input type="tel" id="TelEmpresa" placeholder="Telefono"></td>
+                    <td><input type="tel" id="TelEmpresaAnt" placeholder="Telefono"></td>
+
+                </tr>
+                <tr>
+                    <th>Puesto: Inicial/Final</th>
+                    <td><input type="text" id="PuestoInicial" placeholder="Puesto Inical">
+                        <input type="text" id="PuestoFinal" placeholder="Puesto Final">
+                    </td>
+
+                    <td><input type="text" id="PuestoInicialAnt" placeholder="Puesto Inical">
+                        <input type="text" id="PuestoFinalAnt" placeholder="Puesto Final">
+                    </td>
+                </tr>
+                <br>
+                </tr>
+                <tr>
+                    <th>Sueldo: Inicial/Final</th>
+                    <td><input type="text" id="SueldoInicial" placeholder="Sueldo Inical">
+                        <input type="text" id="SueldoFinal" placeholder="Sueldo Final">
+                    </td>
+
+                    <td><input type="text" id="SueldoInicialAnt" placeholder="Sueldo Inical">
+                        <input type="text" id="SueldoFinalAnt" placeholder="Sueldo Final">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Motivos de su separación </th>
+                    <td><input type="text" id="MotivoSeparacion" placeholder="Motivo de Separacion"></td>
+
+                    <td><input type="text" id="MotivoSeparacionAnt" placeholder="Motivo de Separacion"></td>
+
+                </tr>
+                <tr>
+                    <th>Nombre de su jefe inmediato</th>
+                    <td><input type="text" id="ActDesempeñadas" placeholder="Actividades Desempeñadas a,a,a"></td>
+
+                    <td><input type="text" id="ActDesempeñadasAnt" placeholder="Actividades Desempeñadas a,a,a">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th class="titulotable">Podemos solicitar informes de usted</th>
+                </tr>
+                <tr>
+                    <th>Si <input type="checkbox" id="InformeSi"></th>
+                    <th>No <input type="checkbox" id="InformeNo"></th>
+                </tr>
+            </tbody>
+        </table>
     </fieldset>
+    <br>
     <!-- Javier Referencias personales-->
     <fieldset>
-        <h2 class="titulotable" style="text-align:center;">Referencias Personales</h2>
-        <table>
+        <h2 class="p-4 mb-2 bg-info bg-gradient text-white" style="text-align:center;">Referencias Personales</h2>
+        <table class="table table-hover table-bordered">
             <thead>
                 <th><label>Nombre</label></th>
                 <th><label>Domicilio</label></th>
@@ -204,14 +403,65 @@
             </tbody>
         </table>
     </fieldset>
+    <br>
     <!-- Humberto Datos Generales-->
     <fieldset>
-        <h2 class="titulotable" style="text-align:center;">Datos generales</h2>
+        <h2 class="p-4 mb-2 bg-info bg-gradient text-white" style="text-align:center;">Datos generales</h2>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>¿Cómo se enteró de este empleo?</th>
+                    <th>Anuncio <input type="checkbox" id="InformeSi"> </th>
+                    <th>Otro medio <input type="checkbox" id="InformeNo"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>¿Tienes familiares y/o amigos que laboren en esta empresa?</th>
+                    <th>No <input type="checkbox" id="InformeSi"> </th>
+                    <th>Si <input type="checkbox" id="InformeNo"></th>
+                </tr>
+                </tr>
+                <tr>
+                    <th>¿Ha estado Afianzado?</th>
+                    <th>No <input type="checkbox" id="InformeSi"> </th>
+                    <th>Si <input type="checkbox" id="InformeNo"></th>
+                </tr>
+                <tr>
+                    <th>¿Pertenece a algún sindicato?</th>
+                    <th>No <input type="checkbox" id="InformeSi"> </th>
+                    <th>Si <input type="checkbox" id="InformeNo"></th>
+
+                </tr>
+                <tr>
+                    <th>¿Tiene seguro de vida? </th>
+                    <th>No <input type="checkbox" id="InformeSi"> </th>
+                    <th>Si <input type="checkbox" id="InformeNo"></th>
+
+                </tr>
+                <tr>
+                    <th>¿Puede viajar?</th>
+                    <th>No <input type="checkbox" id="InformeSi"> </th>
+                    <th>Si <input type="checkbox" id="InformeNo"></th>
+                </tr>
+                <br>
+                </tr>
+                <tr>
+                    <th>¿Está dispuesto a cambiar de lugar de residencia?</th>
+                    <th>No <input type="checkbox" id="InformeSi"></th>
+                    <th>Si <input type="checkbox" id="InformeNo"></th>
+                </tr>
+                <tr>
+                    <th>¿Fecha en que podría presentarse a trabajar?: <input type="date" id="FechaTrabajar"></th>
+                </tr>
+            </tbody>
+        </table>
     </fieldset>
+    <br>
     <!-- Javier Datos economicos-->
     <fieldset>
-        <h2 class="titulotable" style="text-align:center;">Datos económicos</h2>
-        <table>
+        <h2 class="p-4 mb-2 bg-info bg-gradient text-white" style="text-align:center;">Datos económicos</h2>
+        <table class="table table-bordered table-hover">
             <thead>
                 <th><label>¿Tiene usted otros ingresos?</label></th>
                 <th><label></label></th>
@@ -221,15 +471,15 @@
                 <th><label>Percepción mensual</label></th>
             </thead>
             <tbody>
-                <th><input type="checkbox" id="ingresosOpcNo">No<input type="checkbox" id="ingresoOpcSi">Si (¿Cuáles?)</th>
+                <th><input type="checkbox" id="ingresosOpcNo">No <input type="checkbox" id="ingresoOpcSi">Si (¿Cuáles?)</th>
                 <th><input type="text" id="otrosIngresos"></th>
                 <th><input type="number" id="importeM"></th>
-                <th><input type="checkbox" id="conyugeTraNo">No<input type="checkbox" id="conyugeTraSi">Si(¿Dónde?)</th>
+                <th><input type="checkbox" id="conyugeTraNo">No <input type="checkbox" id="conyugeTraSi">Si(¿Dónde?)</th>
                 <th><input type="text" id="trabajoConyuge"></th>
                 <th><input type="number" id="percepcionM"></th>
             </tbody>
         </table>
-        <table>
+        <table class="table table-bordered table-hover">
             <thead>
                 <th><label>¿Vive en casa propia?</label></th>
                 <th><label></label></th>
@@ -247,7 +497,7 @@
                 <th><input type="number" id="rentaM"></th>
             </tbody>
         </table>
-        <table>
+        <table class="table table-bordered table-hover">
             <thead>
                 <th><label>¿Tiene automóvil?</label></th>
                 <th><label>Placas</label></th>
@@ -267,7 +517,7 @@
                 <td><input type="number" id="importeD"></td>
             </tbody>
         </table>
-        <table>
+        <table class="table table-bordered table-hover">
             <thead>
                 <th><label>Ingresos $</label></th>
                 <th><input type="number" id="ingreso"></th>
@@ -277,7 +527,7 @@
                 <th><input type="number" id="abonoM"></th>
             </thead>
         </table>
-        <table>
+        <table class="table table-bordered table-hover">
             <thead>
                 <th><label>Egresos $</label></th>
                 <th><input type="number" id="egresos"></th>
@@ -286,10 +536,11 @@
             </thead>
         </table>
     </fieldset>
+    <br>
     <!-- Javier Observaciones y certifico-->
     <fieldset>
         <h2 class="titulotable" style="text-align:center;"></h2>
-        <table>
+        <table class="table table-bordered table-hover">
             <thead>
                 <th><label>Observaciones</label></th>
                 <th><input type="text" id="observaciones"></th>
@@ -298,5 +549,6 @@
             </thead>
         </table>
     </fieldset>
+</div>
 </body>
 </html>
