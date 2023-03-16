@@ -12,7 +12,7 @@
         <div>
         <!-------------Hector Solicitud de empleo-------------------->
             <table>
-                <h2 class="titulotable">Solicitud de Empleo</h2>
+                <h2 class="titulotable" style="text-align:center;">Solicitud de Empleo</h2>
                 <thead>
                     <tr>
                         <th><label for="solicitudEmp">Solicitud de empleo</label></th>
@@ -63,6 +63,240 @@
                 </tbody>
             </table>
         </div>
+    </fieldset>
+    <!-- Javier Documentacion-->
+    <fieldset>
+        <h2 class="titulotable" style="text-align:center;">Documentacion</h2>
+        <div>
+            <table>
+                <thead>
+                    <th><label for="curp">Clave Única de Regsitro de Población (CURP)</label></th>
+                    <th><label for="afore">No de AFORE</label></th>
+                    <th><label for="rfc">Regsitro Federal de Contribuyentes (RFC)</label></th>
+                    <th><label for="licencia">¿Tiene Licencia de Manejo?(Escriba si o No)</label></th>
+                    <th><label for="cartilla">Cartilla de Servicio Militar No.</label></th>
+                </thead>
+                <tbody>
+                    <td><input type="text" id="curp"></td>
+                    <td><input type="text" id="afore"></td>
+                    <td><input type="text" id="rfc"></td>
+                    <td><input type="text" id="licencia"></td>
+                    <td><input type="text" id="cartilla"></td>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <th><label for="pasaporte" >Pasaporte No.</label></th>
+                    <th><label for="numeroSS">Numero de Seguridad Social</label></th>
+                    <th><label for="numLicencia">Clase y número de licencia</label></th>
+                    <th><label for="docsExtranjero">Siendo extranjero que documentos le permite trabajar en el país</label></th>
+                </thead>
+                <tbody>
+                    <td><input type="text" id="pasaporte"></td>
+                    <td><input type="text" id="numeroSS"></td>
+                    <td><input type="text" id="numLicencia"></td>
+                    <td><input type="text" id="docsExtranjero"></td>
+                </tbody>
+            </table>
+        </div>
+    </fieldset>
+    <!-- Humberto Estado de salud y habitos personales-->
+    <fieldset>
+        <h2 class="titulotable" style="text-align:center;">Estado de salud y habitos personales</h2>
+    </fieldset>
+    <!-- Javier Datos Familiares-->
+    <fieldset>
+        <h2 class="titulotable" style="text-align:center;">Datos Familiares</h2>
+        <table>
+            <thead>
+                <th><label>Nombre (Sólo nombre sin apellidos)</label></th>
+                <th><label>Vive</label></th>
+                <th><label>Finado</label></th>
+                <th><label>Domicilio (Sólo Entidad Federativa y Colonia)</label></th>
+                <th><label>Ocupación</label></th>
+            </thead>
+            <tbody>
+                <td><label>Padre</label><input type="text" id="nombreP"></td>
+                <td><br><input type="text" id="viveP"></td>
+                <td><br><input type="text" id="finadoP"></td>
+                <td><br><input type="text" id="domicilioP"></td>
+                <td><br><input type="text" id="ocupacionP"></td>
+            </tbody>
+            <tbody>
+                <td><label>Madre</label><input type="text" id="nombreM"></td>
+                <td><br><input type="text" id="viveM"></td>
+                <td><br><input type="text" id="finadoM"></td>
+                <td><br><input type="text" id="domicilioM"></td>
+                <td><br><input type="text" id="ocupacionM"></td>
+            </tbody>
+            <tbody>
+                <td><label>Esposa(o)</label><input type="text" id="nombreEs"></td>
+                <td><br><input type="text" id="viveEs"></td>
+                <td><br><input type="text" id="finadoEs"></td>
+                <td><br><input type="text" id="domicilioEs"></td>
+                <td><br><input type="text" id="ocupacionEs"></td>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <th><label>Nombre y edades de los hijos: </label></th>
+                <th><input type="text" id="hijos"></th>
+            </thead>
+        </table>
+    </fieldset>
+    <!-- Humberto Escolaridad-->
+    <fieldset>
+        <h2 class="titulotable" style="text-align:center;">Escolaridad</h2>
+    </fieldset>
+    <!-- Javier Conocimientos generales-->
+    <fieldset>
+        <h2 class="titulotable" style="text-align:center;">Conocimientos Genreales</h2>
+        <table>
+            <thead>
+                <th><label for="idiomas">Idiomas que domina</label></th>
+                <th><label for="funcionesO">Funciones de oficina que domina</label></th>
+                <th><label for="maquinasO">Máquinas de oficina y/o equip9o de trabajo que sepa manejar</label></th>
+                <th><label for="otrosT">Otros trabajos o funciones que domina</label></th>
+            </thead>
+            <tbody>
+                <td><input type="text" id="idiomas"></td>
+                <td><input type="text" id="funcionesO"></td>
+                <td><input type="text" id="maquinasO"></td>
+                <td><input type="text" id="otrosT"></td>
+            </tbody>
+        </table>
+    </fieldset>
+    <!-- Humberto Empleo actual o anteriores-->
+    <fieldset>
+        <h2 class="titulotable" style="text-align:center;">Empleo Actual O Anteriores</h2>
+    </fieldset>
+    <!-- Javier Referencias personales-->
+    <fieldset>
+        <h2 class="titulotable" style="text-align:center;">Referencias Personales</h2>
+        <table>
+            <thead>
+                <th><label>Nombre</label></th>
+                <th><label>Domicilio</label></th>
+                <th><label>Teléfono</label></th>
+                <th><label>Ocupación</label></th>
+                <th><label>Tiempo de conocerse</label></th>
+            </thead>
+            <tbody>
+                <td><input type="text" id="nombre1"></td>
+                <td><input type="text" id="domicilio1"></td>
+                <td><input type="text" id="telefono1"></td>
+                <td><input type="text" id="ocupacion1"></td>
+                <td><input type="text" id="tiempo1"></td>
+            </tbody>
+            <tbody>
+                <td><input type="text" id="nombre2"></td>
+                <td><input type="text" id="domicilio2"></td>
+                <td><input type="text" id="telefono2"></td>
+                <td><input type="text" id="ocupacion2"></td>
+                <td><input type="text" id="tiempo2"></td>
+            </tbody>
+            <tbody>
+                <td><input type="text" id="nombre3"></td>
+                <td><input type="text" id="domicilio3"></td>
+                <td><input type="text" id="telefono3"></td>
+                <td><input type="text" id="ocupacion3"></td>
+                <td><input type="text" id="tiempo3"></td>
+            </tbody>
+        </table>
+    </fieldset>
+    <!-- Humberto Datos Generales-->
+    <fieldset>
+        <h2 class="titulotable" style="text-align:center;">Datos generales</h2>
+    </fieldset>
+    <!-- Javier Datos economicos-->
+    <fieldset>
+        <h2 class="titulotable" style="text-align:center;">Datos económicos</h2>
+        <table>
+            <thead>
+                <th><label>¿Tiene usted otros ingresos?</label></th>
+                <th><label></label></th>
+                <th><label>Importe mensual $</label></th>
+                <th><label>¿Su cónyuge trabaja?</label></th>
+                <th><label></label></th>
+                <th><label>Percepción mensual</label></th>
+            </thead>
+            <tbody>
+                <th><input type="checkbox" id="ingresosOpcNo">No<input type="checkbox" id="ingresoOpcSi">Si (¿Cuáles?)</th>
+                <th><input type="text" id="otrosIngresos"></th>
+                <th><input type="number" id="importeM"></th>
+                <th><input type="checkbox" id="conyugeTraNo">No<input type="checkbox" id="conyugeTraSi">Si(¿Dónde?)</th>
+                <th><input type="text" id="trabajoConyuge"></th>
+                <th><input type="number" id="percepcionM"></th>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <th><label>¿Vive en casa propia?</label></th>
+                <th><label></label></th>
+                <th><label>Importe mensual $</label></th>
+                <th><label>¿Paga renta?</label></th>
+                <th><label></label></th>
+                <th><label>Renta mensual $</label></th>
+            </thead>
+            <tbody>
+                <th><input type="checkbox" id="casaPNo">No<input type="checkbox" id="casaPSi">Si</th>
+                <th><input type="text"></th>
+                <th><input type="number" id="importeMensual"></th>
+                <th><input type="checkbox" id="rentaN">No<input type="checkbox" id="rentaS">Si</th>
+                <th><input type="text"></th>
+                <th><input type="number" id="rentaM"></th>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <th><label>¿Tiene automóvil?</label></th>
+                <th><label>Placas</label></th>
+                <th><label>Marca</label></th>
+                <th><label>Modelo</label></th>
+                <th><label>¿Tienes deudas?</label></th>
+                <th><label></label></th>
+                <th><label>Importe $</label></th>
+            </thead>
+            <tbody>
+                <td><input type="checkbox" id="autoN">No<input type="checkbox" id="autoS">Si</td>
+                <td><input type="text" id="placasA"></td>
+                <td><input type="text" id="marcaA"></td>
+                <td><input type="text" id="modeloA"></td>
+                <td><input type="checkbox" id="deudasN">No<input type="checkbox" id="dudasS">Si(¿De qué clase?)</td>
+                <td><input type="text" id="claseA"></td>
+                <td><input type="number" id="importeD"></td>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <th><label>Ingresos $</label></th>
+                <th><input type="number" id="ingreso"></th>
+                <th><label>Ahorros $</label></th>
+                <th><input type="number" id="ahorro"></th>
+                <th><label>¿Cuánto abona mensualmente? $</label></th>
+                <th><input type="number" id="abonoM"></th>
+            </thead>
+        </table>
+        <table>
+            <thead>
+                <th><label>Egresos $</label></th>
+                <th><input type="number" id="egresos"></th>
+                <th><label>Total (gastos mensuales) $</label></th>
+                <th><input type="number" id="totalGastos"></th>
+            </thead>
+        </table>
+    </fieldset>
+    <!-- Javier Observaciones y certifico-->
+    <fieldset>
+        <h2 class="titulotable" style="text-align:center;"></h2>
+        <table>
+            <thead>
+                <th><label>Observaciones</label></th>
+                <th><input type="text" id="observaciones"></th>
+                <th><label>Certifico que los datos proporcionados son correctos y autorizo a la empresa para que certifique a su entera satisfacción</label></th>
+                <th><input type="text" id="firma"></th>
+            </thead>
+        </table>
     </fieldset>
 </body>
 </html>
