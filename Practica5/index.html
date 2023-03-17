@@ -183,7 +183,7 @@
                     <th>Domicilio</th>
                     <th>Fecha DE</th>
                     <th>Fecha A</th>
-                    <th>Años</th>
+                    <th>anios</th>
                     <th>Título Recibido</th>
                 </tr>
             </thead>
@@ -195,7 +195,7 @@
                     <th><input type="date" id="fechaPrimaria"></th>
                     <th><input type="date" id="fechaPrimaria2"></th>
 
-                    <td><input type="number1" id="años1" placeholder="Años"></td>
+                    <td><input type="number1" id="anios1" placeholder="anios"></td>
 
                     <td><input type="text" id="TituloPrimaria" placeholder="Titulo Recibido"></td>
 
@@ -207,7 +207,7 @@
                     <th><input type="date" id="fechaSecundaria"></th>
                     <th><input type="date" id="fechaSecundaria2"></th>
 
-                    <td><input type="number1" id="años2" placeholder="Años"></td>
+                    <td><input type="number1" id="anios2" placeholder="anios"></td>
 
                     <td><input type="text" id="TituloSecundaria" placeholder="Titulo Recibido"></td>
 
@@ -221,7 +221,7 @@
                     <th><input type="date" id="fechaPrepa"></th>
                     <th><input type="date" id="fechaPrepa2"></th>
 
-                    <td><input type="number1" id="años3" placeholder="Años"></td>
+                    <td><input type="number1" id="anios3" placeholder="anios"></td>
 
                     <td><input type="text" id="TituloPrepa" placeholder="Titulo Recibido"></td>
 
@@ -233,7 +233,7 @@
                     <th><input type="date" id="fechaProfec"></th>
                     <th><input type="date" id="fechaProfec2"></th>
 
-                    <td><input type="number1" id="años4" placeholder="Años"></td>
+                    <td><input type="number1" id="anios4" placeholder="anios"></td>
 
                     <td><input type="text" id="TituloProfecional" placeholder="Titulo Recibido"></td>
 
@@ -245,7 +245,7 @@
                     <th><input type="date" id="fechaComer"></th>
                     <th><input type="date" id="fechaComer2"></th>
 
-                    <td><input type="number1" id="años5" placeholder="Años"></td>
+                    <td><input type="number1" id="anios5" placeholder="anios"></td>
 
                     <td><input type="text" id="TituloComercial" placeholder="Titulo Recibido"></td>
                 </tr>
@@ -353,9 +353,9 @@
                 </tr>
                 <tr>
                     <th>Nombre de su jefe inmediato</th>
-                    <td><input type="text" id="ActDesempeñadas" placeholder="Actividades Desempeñadas a,a,a"></td>
+                    <td><input type="text" id="ActDesempenadas" placeholder="Actividades Desempeñadas a,a,a"></td>
 
-                    <td><input type="text" id="ActDesempeñadasAnt" placeholder="Actividades Desempeñadas a,a,a">
+                    <td><input type="text" id="ActDesempenadasAnt" placeholder="Actividades Desempeñadas a,a,a">
                     </td>
                 </tr>
 
@@ -683,32 +683,32 @@
     	var DomicilioPrim = document.getElementById("DomicilioPrim").value;
     	var fechaPrimaria = document.getElementById("fechaPrimaria").value;
     	var fechaPrimaria2 = document.getElementById("fechaPrimaria2").value;
-    	var años1 = document.getElementById("años1").value;
+    	var anios1 = document.getElementById("anios1").value;
         var TituloPrimaria = document.getElementById("TituloPrimaria").value;
         var Secundaria = document.getElementById("Secundaria").value;
     	var DomicilioSec = document.getElementById("DomicilioSec").value;
     	var fechaSecundaria = document.getElementById("fechaSecundaria").value;
     	var fechaSecundaria2 = document.getElementById("fechaSecundaria2").value;
-    	var años2 = document.getElementById("años2").value;
+    	var anios2 = document.getElementById("anios2").value;
         var TituloSecundaria = document.getElementById("TituloSecundaria").value;
         var Preparatoria = document.getElementById("Preparatoria").value;
     	var Domiciliobachi = document.getElementById("Domiciliobachi").value;
     	var fechaPrepa = document.getElementById("fechaPrepa").value;
     	var fechaPrepa2 = document.getElementById("fechaPrepa2").value;
 
-        var años3 = document.getElementById("años3").value;
+        var anios3 = document.getElementById("anios3").value;
     	var TituloPrepa = document.getElementById("TituloPrepa").value;
     	var Profesional = document.getElementById("Profesional").value;
     	var DomicilioProfe = document.getElementById("DomicilioProfe").value;
     	var fechaProfec = document.getElementById("fechaProfec").value;
         var fechaProfec2 = document.getElementById("fechaProfec2").value;
-        var años4 = document.getElementById("años4").value;
+        var anios4 = document.getElementById("anios4").value;
     	var TituloProfecional = document.getElementById("TituloProfecional").value;
     	var Comercial = document.getElementById("Comercial").value;
         var DomicilioComercia = document.getElementById("DomicilioComercia").value;
     	var fechaComer = document.getElementById("fechaComer").value;
     	var fechaComer2 = document.getElementById("fechaComer2").value;
-        var años5 = document.getElementById("años5").value;
+        var anios5 = document.getElementById("anios5").value;
         var TituloComercial = document.getElementById("TituloComercial").value;
     	var EscuelaActual = document.getElementById("EscuelaActual").value;
     	var Horario = document.getElementById("Horario").value;
@@ -720,32 +720,32 @@
 		localStorage.setItem("DomicilioPrim", DomicilioPrim);
 		localStorage.setItem("fechaPrimaria", fechaPrimaria);
         localStorage.setItem("fechaPrimaria2", fechaPrimaria2);
-		localStorage.setItem("años1", años1);
+		localStorage.setItem("anios1", anios1);
         localStorage.setItem("TituloPrimaria", TituloPrimaria);
         localStorage.setItem("Secundaria", Secundaria);
 		localStorage.setItem("DomicilioSec", DomicilioSec);
 		localStorage.setItem("fechaSecundaria", fechaSecundaria);
         localStorage.setItem("fechaSecundaria2", fechaSecundaria2);
-		localStorage.setItem("años2", años2);
+		localStorage.setItem("anios2", anios2);
         localStorage.setItem("TituloSecundaria", TituloSecundaria);
         localStorage.setItem("Preparatoria", Preparatoria);
         localStorage.setItem("Domiciliobachi", Domiciliobachi);
 		localStorage.setItem("fechaPrepa", fechaPrepa);
 		localStorage.setItem("fechaPrepa2", fechaPrepa2);
 
-        localStorage.setItem("años3", años3);
+        localStorage.setItem("anios3", anios3);
 		localStorage.setItem("TituloPrepa", TituloPrepa);
 		localStorage.setItem("Profesional", Profesional);
         localStorage.setItem("DomicilioProfe", DomicilioProfe);
 		localStorage.setItem("fechaProfec", fechaProfec);
         localStorage.setItem("fechaProfec2", fechaProfec2);
-        localStorage.setItem("años4", años4);
+        localStorage.setItem("anios4", anios4);
 		localStorage.setItem("TituloProfecional", TituloProfecional);
 		localStorage.setItem("Comercial", Comercial);
         localStorage.setItem("DomicilioComercia", DomicilioComercia);
         localStorage.setItem("fechaComer", fechaComer);
 		localStorage.setItem("fechaComer2", fechaComer2);
-        localStorage.setItem("años5", años5);
+        localStorage.setItem("anios5", anios5);
         localStorage.setItem("TituloComercial", TituloComercial);
         localStorage.setItem("EscuelaActual", EscuelaActual);
 		localStorage.setItem("Horario", Horario);
@@ -791,8 +791,8 @@
     	var SueldoFinalAnt2 = document.getElementById("SueldoFinalAnt2").value;
     	var MotivoSeparacion = document.getElementById("MotivoSeparacion").value;
         var MotivoSeparacionAnt = document.getElementById("MotivoSeparacionAnt").value;
-        var ActDesempeñadas = document.getElementById("ActDesempeñadas").value;
-    	var ActDesempeñadasAnt = document.getElementById("ActDesempeñadasAnt").value;
+        var actdesempenadas = document.getElementById("actdesempenadas").value;
+    	var actdesempenadasAnt = document.getElementById("actdesempenadasAnt").value;
     	var InformeSi = document.getElementById("InformeSi").value;
     	var InformeNo = document.getElementById("InformeNo").value;
 
@@ -815,9 +815,9 @@
         localStorage.setItem("SueldoFinalAnt2", SueldoFinalAnt2);
         localStorage.setItem("MotivoSeparacion", MotivoSeparacion);
 		localStorage.setItem("MotivoSeparacionAnt", MotivoSeparacionAnt);
-		localStorage.setItem("ActDesempeñadas", ActDesempeñadas);
+		localStorage.setItem("actdesempenadas", actdesempenadas);
 
-        localStorage.setItem("ActDesempeñadasAnt", ActDesempeñadasAnt);
+        localStorage.setItem("actdesempenadasAnt", actdesempenadasAnt);
 		localStorage.setItem("InformeSi", InformeSi);
 		localStorage.setItem("InformeNo", InformeNo);
 
