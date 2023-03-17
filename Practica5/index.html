@@ -54,13 +54,13 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><input type="text" id="APaterno" placeholder="Apellido Paterno"></td>
-                        <td><input type="text" id="Amaterno" placeholder="Apellido Materno"></td>
-                        <td><input type="text" id="nombres" placeholder="Nombre(s)"></td>
-                        <td><input type="text" id="edad" placeholder="Edad"></td>
-                        <td><input type="text" id="Domicilio" placeholder="Domicilio"></td>
-                        <td><input type="text" id="Colonia" placeholder="Colonia"></td>
-                        <td><input type="text" id="CodPostal" placeholder="Codigo Postal"></td>
+                        <td><input type="text" id="APaterno" placeholder="Apellido Paterno" require></td>
+                        <td><input type="text" id="Amaterno" placeholder="Apellido Materno" require></td>
+                        <td><input type="text" id="nombres" placeholder="Nombre(s)" require></td>
+                        <td><input type="text" id="edad" placeholder="Edad" require></td>
+                        <td><input type="text" id="Domicilio" placeholder="Domicilio require"></td>
+                        <td><input type="text" id="Colonia" placeholder="Colonia" require></td>
+                        <td><input type="text" id="CodPostal" placeholder="Codigo Postal" require></td>
                 </tbody>
             </table>
         </div>
@@ -79,11 +79,11 @@
                     <th><label for="cartilla">Cartilla de Servicio Militar No.</label></th>
                 </thead>
                 <tbody>
-                    <td><input type="text" id="curp"></td>
-                    <td><input type="text" id="afore"></td>
-                    <td><input type="text" id="rfc"></td>
-                    <td><input type="text" id="licencia"></td>
-                    <td><input type="text" id="cartilla"></td>
+                    <td><input type="text" id="curp" require></td>
+                    <td><input type="text" id="afore" require></td>
+                    <td><input type="text" id="rfc" require></td>
+                    <td><input type="text" id="licencia" require></td>
+                    <td><input type="text" id="cartilla" require></td>
                 </tbody>
             </table>
             <table>
@@ -94,10 +94,10 @@
                     <th><label for="docsExtranjero">Siendo extranjero que documentos le permite trabajar en el país</label></th>
                 </thead>
                 <tbody>
-                    <td><input type="text" id="pasaporte"></td>
-                    <td><input type="text" id="numeroSS"></td>
-                    <td><input type="text" id="numLicencia"></td>
-                    <td><input type="text" id="docsExtranjero"></td>
+                    <td><input type="text" id="pasaporte" require></td>
+                    <td><input type="text" id="numeroSS" require></td>
+                    <td><input type="text" id="numLicencia" require></td>
+                    <td><input type="text" id="docsExtranjero" require></td>
                 </tbody>
             </table>
         </div>
@@ -119,14 +119,14 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><input type="text" id="SaludActual" placeholder="Cómo considera su estado de salud actual">
+                    <td><input type="text" id="SaludActual" placeholder="Cómo considera su estado de salud actual" require>
                     </td>
-                    <td><input type="text" id="EnferCronica" placeholder="Padece alguna enfermedad crónica"></td>
-                    <td><input type="text" id="Deporte" placeholder="Practica usted algún deporte"></td>
+                    <td><input type="text" id="EnferCronica" placeholder="Padece alguna enfermedad crónica" require></td>
+                    <td><input type="text" id="Deporte" placeholder="Practica usted algún deporte" require></td>
                     <td><input type="text" id="PerteneAclub"
-                            placeholder="Pertenece a algún Club Social o Deportivo"></td>
-                    <td><input type="text" id="TiempoLibre" placeholder="En qué ocupa su tiempo libre"></td>
-                    <td><input type="text" id="MetaVida" placeholder="Cuál es su meta en la vida"></td>
+                            placeholder="Pertenece a algún Club Social o Deportivo" require></td>
+                    <td><input type="text" id="TiempoLibre" placeholder="En qué ocupa su tiempo libre" require></td>
+                    <td><input type="text" id="MetaVida" placeholder="Cuál es su meta en la vida" require></td>
             </tbody>
         </table>
     </fieldset>
@@ -144,30 +144,30 @@
             </thead>
             <tbody>
                 <td><label>Padre</label><input type="text" id="nombreP"></td>
-                <td><br><input type="text" id="viveP"></td>
-                <td><br><input type="text" id="finadoP"></td>
-                <td><br><input type="text" id="domicilioP"></td>
-                <td><br><input type="text" id="ocupacionP"></td>
+                <td><br><input type="text" id="viveP" require></td>
+                <td><br><input type="text" id="finadoP" require></td>
+                <td><br><input type="text" id="domicilioP" require></td>
+                <td><br><input type="text" id="ocupacionP" require></td>
             </tbody>
             <tbody>
-                <td><label>Madre</label><input type="text" id="nombreM"></td>
-                <td><br><input type="text" id="viveM"></td>
-                <td><br><input type="text" id="finadoM"></td>
-                <td><br><input type="text" id="domicilioM"></td>
-                <td><br><input type="text" id="ocupacionM"></td>
+                <td><label>Madre</label><input type="text" id="nombreM" require></td>
+                <td><br><input type="text" id="viveM" require></td>
+                <td><br><input type="text" id="finadoM" require></td>
+                <td><br><input type="text" id="domicilioM" require></td>
+                <td><br><input type="text" id="ocupacionM" require></td>
             </tbody>
             <tbody>
-                <td><label>Esposa(o)</label><input type="text" id="nombreEs"></td>
-                <td><br><input type="text" id="viveEs"></td>
-                <td><br><input type="text" id="finadoEs"></td>
-                <td><br><input type="text" id="domicilioEs"></td>
-                <td><br><input type="text" id="ocupacionEs"></td>
+                <td><label>Esposa(o)</label><input type="text" id="nombreEs" require></td>
+                <td><br><input type="text" id="viveEs" require></td>
+                <td><br><input type="text" id="finadoEs" require></td>
+                <td><br><input type="text" id="domicilioEs" require></td>
+                <td><br><input type="text" id="ocupacionEs" require></td>
             </tbody>
         </table>
         <table class="table table-bordered table-hover">
             <thead>
                 <th><label>Nombre y edades de los hijos: </label></th>
-                <th><input type="text" id="hijos"></th>
+                <th><input type="text" id="hijos" require></th>
             </thead>
         </table>
     </fieldset>
@@ -188,65 +188,65 @@
             </thead>
             <tbody>
                 <tr>
-                    <th>Primaria: <input type="text1" id="primaria" placeholder="primaria"></th>
-                    <td><input type="text" id="DomicilioPrim" placeholder="Domicilio"></td>
+                    <th>Primaria: <input type="text1" id="primaria" placeholder="primaria" require></th>
+                    <td><input type="text" id="DomicilioPrim" placeholder="Domicilio" require></td>
 
-                    <th><input type="date" id="fechaPrimaria"></th>
-                    <th><input type="date" id="fechaPrimaria2"></th>
+                    <th><input type="date" id="fechaPrimaria" require></th>
+                    <th><input type="date" id="fechaPrimaria2" require></th>
 
-                    <td><input type="number1" id="anios1" placeholder="anios"></td>
+                    <td><input type="number1" id="anios1" placeholder="anios" require></td>
 
-                    <td><input type="text" id="TituloPrimaria" placeholder="Titulo Recibido"></td>
-
-                </tr>
-                <tr>
-                    <th>Secundaria: <input type="text1" id="Secundaria" placeholder="Secundaria"></th>
-                    <td><input type="text" id="DomicilioSec" placeholder="Domicilio"></td>
-
-                    <th><input type="date" id="fechaSecundaria"></th>
-                    <th><input type="date" id="fechaSecundaria2"></th>
-
-                    <td><input type="number1" id="anios2" placeholder="anios"></td>
-
-                    <td><input type="text" id="TituloSecundaria" placeholder="Titulo Recibido"></td>
-
+                    <td><input type="text" id="TituloPrimaria" placeholder="Titulo Recibido" require></td>
 
                 </tr>
                 <tr>
-                    <th>Preparatoria o Vocacional: <input type="text1" id="Preparatoria" placeholder="Preparatoria">
+                    <th>Secundaria: <input type="text1" id="Secundaria" placeholder="Secundaria" require></th>
+                    <td><input type="text" id="DomicilioSec" placeholder="Domicilio" require></td>
+
+                    <th><input type="date" id="fechaSecundaria" require></th>
+                    <th><input type="date" id="fechaSecundaria2" require></th>
+
+                    <td><input type="number1" id="anios2" placeholder="anios" require></td>
+
+                    <td><input type="text" id="TituloSecundaria" placeholder="Titulo Recibido" require></td>
+
+
+                </tr>
+                <tr>
+                    <th>Preparatoria o Vocacional: <input type="text1" id="Preparatoria" placeholder="Preparatoria" require>
                     </th>
-                    <td><input type="text" id="Domiciliobachi" placeholder="Domicilio"></td>
+                    <td><input type="text" id="Domiciliobachi" placeholder="Domicilio" require></td>
 
-                    <th><input type="date" id="fechaPrepa"></th>
-                    <th><input type="date" id="fechaPrepa2"></th>
+                    <th><input type="date" id="fechaPrepa" require></th>
+                    <th><input type="date" id="fechaPrepa2" require></th>
 
-                    <td><input type="number1" id="anios3" placeholder="anios"></td>
+                    <td><input type="number1" id="anios3" placeholder="anios" require></td>
 
-                    <td><input type="text" id="TituloPrepa" placeholder="Titulo Recibido"></td>
-
-                </tr>
-                <tr>
-                    <th>Profesional: <input type="text1" id="Profesional" placeholder="Profesional"></th>
-                    <td><input type="text" id="DomicilioProfe" placeholder="Domicilio"></td>
-
-                    <th><input type="date" id="fechaProfec"></th>
-                    <th><input type="date" id="fechaProfec2"></th>
-
-                    <td><input type="number1" id="anios4" placeholder="anios"></td>
-
-                    <td><input type="text" id="TituloProfecional" placeholder="Titulo Recibido"></td>
+                    <td><input type="text" id="TituloPrepa" placeholder="Titulo Recibido" require></td>
 
                 </tr>
                 <tr>
-                    <th>Comercial: <input type="text1" id="Comercial" placeholder="Comercial"></th>
-                    <td><input type="text" id="DomicilioComercia" placeholder="Domicilio"></td>
+                    <th>Profesional: <input type="text1" id="Profesional" placeholder="Profesional" require></th>
+                    <td><input type="text" id="DomicilioProfe" placeholder="Domicilio" require></td>
 
-                    <th><input type="date" id="fechaComer"></th>
-                    <th><input type="date" id="fechaComer2"></th>
+                    <th><input type="date" id="fechaProfec" require></th>
+                    <th><input type="date" id="fechaProfec2" require></th>
 
-                    <td><input type="number1" id="anios5" placeholder="anios"></td>
+                    <td><input type="number1" id="anios4" placeholder="anios" require></td>
 
-                    <td><input type="text" id="TituloComercial" placeholder="Titulo Recibido"></td>
+                    <td><input type="text" id="TituloProfecional" placeholder="Titulo Recibido" require></td>
+
+                </tr>
+                <tr>
+                    <th>Comercial: <input type="text1" id="Comercial" placeholder="Comercial" require></th>
+                    <td><input type="text" id="DomicilioComercia" placeholder="Domicilio" require></td>
+
+                    <th><input type="date" id="fechaComer" require></th>
+                    <th><input type="date" id="fechaComer2" require></th>
+
+                    <td><input type="number1" id="anios5" placeholder="anios" require></td>
+
+                    <td><input type="text" id="TituloComercial" placeholder="Titulo Recibido" require></td>
                 </tr>
                 <br>
                 </tr>
@@ -255,10 +255,10 @@
                     </center>
                 </tr>
                 <tr>
-                    <th>escuela: <input type="text" id="EscuelaActual" placeholder="Escuela"></th>
-                    <th>Horario: <input type="text" id="Horario" placeholder="Horario"></th>
-                    <th>Curso o carrera: <input type="text" id="CursoCarrera" placeholder="Curso o carrera"></th>
-                    <th>Grado: <input type="text" id="Grado" placeholder="Grado"></th>
+                    <th>escuela: <input type="text" id="EscuelaActual" placeholder="Escuela" require></th>
+                    <th>Horario: <input type="text" id="Horario" placeholder="Horario" require></th>
+                    <th>Curso o carrera: <input type="text" id="CursoCarrera" placeholder="Curso o carrera" require></th>
+                    <th>Grado: <input type="text" id="Grado" placeholder="Grado" require></th>
 
                 </tr>
             </tbody>
@@ -276,10 +276,10 @@
                 <th><label for="otrosT">Otros trabajos o funciones que domina</label></th>
             </thead>
             <tbody>
-                <td><input type="text" id="idiomas"></td>
-                <td><input type="text" id="funcionesO"></td>
-                <td><input type="text" id="maquinasO"></td>
-                <td><input type="text" id="otrosT"></td>
+                <td><input type="text" id="idiomas" require></td>
+                <td><input type="text" id="funcionesO" require></td>
+                <td><input type="text" id="maquinasO" require></td>
+                <td><input type="text" id="otrosT" require></td>
             </tbody>
         </table>
     </fieldset>
@@ -298,63 +298,63 @@
             <tbody>
                 <tr>
                     <th>Tiempo que prestó sus servicios:
-                    <td><input type="text" id="TimeService" placeholder="Tiempo de servicios"></td>
+                    <td><input type="text" id="TimeService" placeholder="Tiempo de servicios" require></td>
 
-                    <td><input type="text" id="TimeServiceAnt" placeholder="Tiempo de servicios"></td>
+                    <td><input type="text" id="TimeServiceAnt" placeholder="Tiempo de servicios" require></td>
                 </tr>
                 <tr>
                     <th>Nombre de la Empresa:</th>
-                    <td><input type="text" id="NomEmpresa" placeholder="Nombre Empresa"></td>
+                    <td><input type="text" id="NomEmpresa" placeholder="Nombre Empresa" require></td>
 
-                    <td><input type="text" id="NomEmpresaAnt" placeholder="Nombre Empresa"></td>
+                    <td><input type="text" id="NomEmpresaAnt" placeholder="Nombre Empresa" require></td>
                 </tr>
                 <tr>
                     <th>Domicilio:</th>
-                    <td><input type="text" id="DomicilioEmpresa" placeholder="Domicilio"></td>
+                    <td><input type="text" id="DomicilioEmpresa" placeholder="Domicilio" require></td>
 
-                    <td><input type="text" id="DomicilioEmpresaAnt" placeholder="Domicilio"></td>
+                    <td><input type="text" id="DomicilioEmpresaAnt" placeholder="Domicilio" require></td>
 
                 </tr>
                 <tr>
                     <th>Teléfono:</th>
-                    <td><input type="tel" id="TelEmpresa" placeholder="Telefono"></td>
-                    <td><input type="tel" id="TelEmpresaAnt" placeholder="Telefono"></td>
+                    <td><input type="tel" id="TelEmpresa" placeholder="Telefono" require></td>
+                    <td><input type="tel" id="TelEmpresaAnt" placeholder="Telefono" require></td>
 
                 </tr>
                 <tr>
                     <th>Puesto: Inicial/Final</th>
-                    <td><input type="text" id="PuestoInicial1" placeholder="Puesto Inical">
-                        <input type="text" id="PuestoFinal2" placeholder="Puesto Final">
+                    <td><input type="text" id="PuestoInicial1" placeholder="Puesto Inical" require>
+                        <input type="text" id="PuestoFinal2" placeholder="Puesto Final" require>
                     </td>
 
-                    <td><input type="text" id="PuestoInicialAnt1" placeholder="Puesto Inical">
-                        <input type="text" id="PuestoFinalAnt2" placeholder="Puesto Final">
+                    <td><input type="text" id="PuestoInicialAnt1" placeholder="Puesto Inical" require>
+                        <input type="text" id="PuestoFinalAnt2" placeholder="Puesto Final" require>
                     </td>
                 </tr>
                 <br>
                 </tr>
                 <tr>
                     <th>Sueldo: Inicial/Final</th>
-                    <td><input type="text" id="SueldoInicial1" placeholder="Sueldo Inical">
-                        <input type="text" id="SueldoFinal2" placeholder="Sueldo Final">
+                    <td><input type="text" id="SueldoInicial1" placeholder="Sueldo Inical" require>
+                        <input type="text" id="SueldoFinal2" placeholder="Sueldo Final" require>
                     </td>
 
-                    <td><input type="text" id="SueldoInicialAnt1" placeholder="Sueldo Inical">
-                        <input type="text" id="SueldoFinalAnt2" placeholder="Sueldo Final">
+                    <td><input type="text" id="SueldoInicialAnt1" placeholder="Sueldo Inical" require>
+                        <input type="text" id="SueldoFinalAnt2" placeholder="Sueldo Final" require>
                     </td>
                 </tr>
                 <tr>
                     <th>Motivos de su separación </th>
-                    <td><input type="text" id="MotivoSeparacion" placeholder="Motivo de Separacion"></td>
+                    <td><input type="text" id="MotivoSeparacion" placeholder="Motivo de Separacion" require></td>
 
-                    <td><input type="text" id="MotivoSeparacionAnt" placeholder="Motivo de Separacion"></td>
+                    <td><input type="text" id="MotivoSeparacionAnt" placeholder="Motivo de Separacion" require></td>
 
                 </tr>
                 <tr>
                     <th>Nombre de su jefe inmediato</th>
-                    <td><input type="text" id="ActDesempenadas" placeholder="Actividades Desempeñadas a,a,a"></td>
+                    <td><input type="text" id="ActDesempenadas" placeholder="Actividades Desempeñadas a,a,a" require></td>
 
-                    <td><input type="text" id="ActDesempenadasAnt" placeholder="Actividades Desempeñadas a,a,a">
+                    <td><input type="text" id="ActDesempenadasAnt" placeholder="Actividades Desempeñadas a,a,a"require>
                     </td>
                 </tr>
 
@@ -362,8 +362,8 @@
                     <th>Podemos solicitar informes de usted</th> 
                 </tr>
                 <tr>
-                    <th>Si <input type="checkbox" id="InformeSi"></th>
-                    <th>No <input type="checkbox" id="InformeNo"></th>
+                    <th>Si <input type="checkbox" id="InformeSi" require></th>
+                    <th>No <input type="checkbox" id="InformeNo" require></th>
                 </tr>
             </tbody>
         </table>
@@ -381,25 +381,25 @@
                 <th><label>Tiempo de conocerse</label></th>
             </thead>
             <tbody>
-                <td><input type="text" id="nombre1"></td>
-                <td><input type="text" id="domicilio1"></td>
-                <td><input type="text" id="telefono1"></td>
-                <td><input type="text" id="ocupacion1"></td>
-                <td><input type="text" id="tiempo1"></td>
+                <td><input type="text" id="nombre1" require></td>
+                <td><input type="text" id="domicilio1" require></td>
+                <td><input type="text" id="telefono1" require></td>
+                <td><input type="text" id="ocupacion1" require></td>
+                <td><input type="text" id="tiempo1" require></td>
             </tbody>
             <tbody>
-                <td><input type="text" id="nombre2"></td>
-                <td><input type="text" id="domicilio2"></td>
-                <td><input type="text" id="telefono2"></td>
-                <td><input type="text" id="ocupacion2"></td>
-                <td><input type="text" id="tiempo2"></td>
+                <td><input type="text" id="nombre2" require></td>
+                <td><input type="text" id="domicilio2" require></td>
+                <td><input type="text" id="telefono2" require></td>
+                <td><input type="text" id="ocupacion2" require></td>
+                <td><input type="text" id="tiempo2" require></td>
             </tbody>
             <tbody>
-                <td><input type="text" id="nombre3"></td>
-                <td><input type="text" id="domicilio3"></td>
-                <td><input type="text" id="telefono3"></td>
-                <td><input type="text" id="ocupacion3"></td>
-                <td><input type="text" id="tiempo3"></td>
+                <td><input type="text" id="nombre3" require></td>
+                <td><input type="text" id="domicilio3" require></td>
+                <td><input type="text" id="telefono3" require></td>
+                <td><input type="text" id="ocupacion3" require></td>
+                <td><input type="text" id="tiempo3" require></td>
             </tbody>
         </table>
     </fieldset>
@@ -411,45 +411,45 @@
             <thead>
                 <tr>
                     <th>¿Cómo se enteró de este empleo?</th>
-                    <th>Anuncio <input type="checkbox" id="InformeSi1"> </th>
-                    <th>Otro medio <input type="checkbox" id="InformeNo2"></th>
+                    <th>Anuncio <input type="checkbox" id="InformeSi1" require> </th>
+                    <th>Otro medio <input type="checkbox" id="InformeNo2" require></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <th>¿Tienes familiares y/o amigos que laboren en esta empresa?</th>
-                    <th>No <input type="checkbox" id="InformeSi3"> </th>
-                    <th>Si <input type="checkbox" id="InformeNo4"></th>
+                    <th>No <input type="checkbox" id="InformeSi3" require> </th>
+                    <th>Si <input type="checkbox" id="InformeNo4" require></th>
                 </tr>
                 </tr>
                 <tr>
                     <th>¿Ha estado Afianzado?</th>
-                    <th>No <input type="checkbox" id="InformeSi5"> </th>
-                    <th>Si <input type="checkbox" id="InformeNo6"></th>
+                    <th>No <input type="checkbox" id="InformeSi5" require> </th>
+                    <th>Si <input type="checkbox" id="InformeNo6" require></th>
                 </tr>
                 <tr>
                     <th>¿Pertenece a algún sindicato?</th>
-                    <th>No <input type="checkbox" id="InformeSi7"> </th>
-                    <th>Si <input type="checkbox" id="InformeNo8"></th>
+                    <th>No <input type="checkbox" id="InformeSi7" require> </th>
+                    <th>Si <input type="checkbox" id="InformeNo8" require></th>
 
                 </tr>
                 <tr>
                     <th>¿Tiene seguro de vida? </th>
-                    <th>No <input type="checkbox" id="InformeSi9"> </th>
-                    <th>Si <input type="checkbox" id="InformeNo10"></th>
+                    <th>No <input type="checkbox" id="InformeSi9" require> </th>
+                    <th>Si <input type="checkbox" id="InformeNo10" require></th>
 
                 </tr>
                 <tr>
                     <th>¿Puede viajar?</th>
-                    <th>No <input type="checkbox" id="InformeSi11"> </th>
-                    <th>Si <input type="checkbox" id="InformeNo12"></th>
+                    <th>No <input type="checkbox" id="InformeSi11" require> </th>
+                    <th>Si <input type="checkbox" id="InformeNo12" require></th>
                 </tr>
                 <br>
                 </tr>
                 <tr>
                     <th>¿Está dispuesto a cambiar de lugar de residencia?</th>
-                    <th>No <input type="checkbox" id="InformeSi13"></th>
-                    <th>Si <input type="checkbox" id="InformeNo14"></th>
+                    <th>No <input type="checkbox" id="InformeSi13" require></th>
+                    <th>Si <input type="checkbox" id="InformeNo14" require></th>
                 </tr>
                 <tr>
                     <th>¿Fecha en que podría presentarse a trabajar?: <input type="date" id="FechaTrabajar"></th>
@@ -471,12 +471,12 @@
                 <th><label>Percepción mensual</label></th>
             </thead>
             <tbody>
-                <th><input type="checkbox" id="ingresosOpcNo">No <input type="checkbox" id="ingresoOpcSi">Si (¿Cuáles?)</th>
-                <th><input type="text" id="otrosIngresos"></th>
-                <th><input type="number" id="importeM"></th>
-                <th><input type="checkbox" id="conyugeTraNo">No <input type="checkbox" id="conyugeTraSi">Si(¿Dónde?)</th>
-                <th><input type="text" id="trabajoConyuge"></th>
-                <th><input type="number" id="percepcionM"></th>
+                <th><input type="checkbox" id="ingresosOpcNo">No <input type="checkbox" id="ingresoOpcSi" require>Si (¿Cuáles?)</th>
+                <th><input type="text" id="otrosIngresos" require></th>
+                <th><input type="number" id="importeM" require></th>
+                <th><input type="checkbox" id="conyugeTraNo">No <input type="checkbox" id="conyugeTraSi require">Si(¿Dónde?)</th>
+                <th><input type="text" id="trabajoConyuge" require></th>
+                <th><input type="number" id="percepcionM" require></th>
             </tbody>
         </table>
         <table class="table table-bordered table-hover">
@@ -489,12 +489,12 @@
                 <th><label>Renta mensual $</label></th>
             </thead>
             <tbody>
-                <th><input type="checkbox" id="casaPNo">No<input type="checkbox" id="casaPSi">Si</th>
-                <th><input type="text"></th>
-                <th><input type="number" id="importeMensual"></th>
-                <th><input type="checkbox" id="rentaN">No<input type="checkbox" id="rentaS">Si</th>
-                <th><input type="text"></th>
-                <th><input type="number" id="rentaM"></th>
+                <th><input type="checkbox" id="casaPNo">No<input type="checkbox" id="casaPSi" require>Si</th>
+                <th><input type="text" require></th>
+                <th><input type="number" id="importeMensual" require></th>
+                <th><input type="checkbox" id="rentaN">No<input type="checkbox" id="rentaS" require>Si</th>
+                <th><input type="text" require></th>
+                <th><input type="number" id="rentaM" require></th>
             </tbody>
         </table>
         <table class="table table-bordered table-hover">
@@ -508,31 +508,31 @@
                 <th><label>Importe $</label></th>
             </thead>
             <tbody>
-                <td><input type="checkbox" id="autoN">No<input type="checkbox" id="autoS">Si</td>
-                <td><input type="text" id="placasA"></td>
-                <td><input type="text" id="marcaA"></td>
-                <td><input type="text" id="modeloA"></td>
-                <td><input type="checkbox" id="deudasN">No<input type="checkbox" id="dudasS">Si(¿De qué clase?)</td>
-                <td><input type="text" id="claseA"></td>
-                <td><input type="number" id="importeD"></td>
+                <td><input type="checkbox" id="autoN">No<input type="checkbox" id="autoS" require>Si</td>
+                <td><input type="text" id="placasA" require></td>
+                <td><input type="text" id="marcaA" require></td>
+                <td><input type="text" id="modeloA" require></td>
+                <td><input type="checkbox" id="deudasN">No<input type="checkbox" id="dudasS" require>Si(¿De qué clase?)</td>
+                <td><input type="text" id="claseA" require></td>
+                <td><input type="number" id="importeD" require></td>
             </tbody>
         </table>
         <table class="table table-bordered table-hover">
             <thead>
                 <th><label>Ingresos $</label></th>
-                <th><input type="number" id="ingreso"></th>
+                <th><input type="number" id="ingreso" require></th>
                 <th><label>Ahorros $</label></th>
-                <th><input type="number" id="ahorro"></th>
+                <th><input type="number" id="ahorro" require></th>
                 <th><label>¿Cuánto abona mensualmente? $</label></th>
-                <th><input type="number" id="abonoM"></th>
+                <th><input type="number" id="abonoM" require></th>
             </thead>
         </table>
         <table class="table table-bordered table-hover">
             <thead>
                 <th><label>Egresos $</label></th>
-                <th><input type="number" id="egresos"></th>
+                <th><input type="number" id="egresos" require></th>
                 <th><label>Total (gastos mensuales) $</label></th>
-                <th><input type="number" id="totalGastos"></th>
+                <th><input type="number" id="totalGastos" require></th>
             </thead>
         </table>
     </fieldset>
@@ -543,9 +543,9 @@
         <table class="table table-bordered table-hover">
             <thead>
                 <th><label>Observaciones</label></th>
-                <th><input type="text" id="observaciones"></th>
+                <th><input type="text" id="observaciones" require></th>
                 <th><label>Certifico que los datos proporcionados son correctos y autorizo a la empresa para que certifique a su entera satisfacción</label></th>
-                <th><input type="text" id="firma"></th>
+                <th><input type="text" id="firma" require></th>
             </thead>
         </table>
     </fieldset>
