@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Datos ingresados</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+            <div>
+                <!-------------Hector Solicitud de empleo-------------------->
+                <table class="table table-hover table-bordered">
+                    <h2 class="p-4 mb-2 bg-info bg-gradient text-white" style="text-align:center;">Solicitud de Empleo
+                    </h2>
+                    <thead>
+                        <tr>
+                            <th><label for="solicitudEmp">Solicitud de empleo</label></th>
+                            <th><label for="fecha">Fecha</label></th>
+                            <th><label for="sueldoMensualD">Sueldo mensual deseado</label></th>
+                            <th><label for="sueldoMensualA">Sueldo mensual autorizado</label></th>
+                            <th><label for="fechaContratacion">Fecha de contratacion</label></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span id="solicitudEmp"></span></td>
+                            <td><span id="fecha"></span></td>
+                            <td><span id="sueldoMensualD"></span></td>
+                            <td><span id="sueldoMensualA"></span></td>
+                            <td><span id="fechaContratacion"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h2 class="p-4 mb-2 bg-info bg-gradient text-white" style="text-align:center;">Datos personales</h2>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Apellido Patrno</th>
+                            <th>Apellido Materno</th>
+                            <th>Nombre(s)</th>
+                            <th>Edad</th>
+                            <th>Domicilio</th>
+                            <th>Colonia</th>
+                            <th>Codigo Postal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span id="APaterno"></span></td>
+                            <td><span id="Amaterno"></span></td>
+                            <td><span id="nombres"></span></td>
+                            <td><span id="edad"></span></td>
+                            <td><span id="Domicilio"></span></td>
+                            <td><span id="Colonia"></span></td>
+                            <td><span id="CodPostal"></span></td>
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h2 class="p-4 mb-2 text-white bg-info bg-gradient" style="text-align:center;">Documentacion</h2>
+            <div>
+                <table>
+                    <thead>
+                        <th><label for="curp">Clave Única de Regsitro de Población (CURP)</label></th>
+                        <th><label for="afore">No de AFORE</label></th>
+                        <th><label for="rfc">Regsitro Federal de Contribuyentes (RFC)</label></th>
+                        <th><label for="licencia">¿Tiene Licencia de Manejo?(Escriba si o No)</label></th>
+                        <th><label for="cartilla">Cartilla de Servicio Militar No.</label></th>
+                    </thead>
+                    <tbody>
+                        <td><span id="curp"></span></td>
+                        <td><span id="afore"></span></td>
+                        <td><span id="rfc"></span></td>
+                        <td><span id="licencia"></span></td>
+                        <td><span id="cartilla"></span></td>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        <th><label for="pasaporte">Pasaporte No.</label></th>
+                        <th><label for="numeroSS">Numero de Seguridad Social</label></th>
+                        <th><label for="numLicencia">Clase y número de licencia</label></th>
+                        <th><label for="docsExtranjero">Siendo extranjero que documentos le permite trabajar en el
+                                país</label></th>
+                    </thead>
+                    <tbody>
+                        <td><span id="pasaporte"></span></td>
+                        <td><span id="numeroSS"></span></td>
+                        <td><span id="numLicencia"></span></td>
+                        <td><span id="docsExtranjero"></span></td>
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h2 class="p-4 mb-2 bg-info bg-gradient text-white" style="text-align:center;">Estado de salud y habitos
+                personales</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th><label>¿Cómo considera su estado de salud actual?</label> </th>
+                        <th><label>¿Padece alguna enfermedad crónica? </label></th>
+                        <th>¿Practica usted algún deporte?</th>
+                        <th>¿Pertenece a algún Club Social o Deportivo?</th>
+                        <th>¿En qué ocupa su tiempo libre?</th>
+                        <th>¿Cuál es su meta en la vida?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span id="SaludActual"></span></td>
+                        <td><span id="EnferCronica"></span></td>
+                        <td><span id="Deporte"></span></td>
+                        <td><span id="PerteneAclub"></span></td>
+                        <td><span id="TiempoLibre"></span></td>
+                        <td><span id="MetaVida"></span></td>
+                </tbody>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h2 class="p-4 mb-2 bg-info bg-gradient text-white" style="text-align:center;">Datos Familiares</h2>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <th><label>Nombre (Sólo nombre sin apellidos)</label></th>
+                    <th><label>Vive</label></th>
+                    <th><label>Finado</label></th>
+                    <th><label>Domicilio (Sólo Entidad Federativa y Colonia)</label></th>
+                    <th><label>Ocupación</label></th>
+                </thead>
+                <tbody>
+                    <td><label>Padre</label><span id="nombreP"></td>
+                    <td><br><span id="viveP"></span></td>
+                    <td><br><span id="finadoP"></span></td>
+                    <td><br><span id="domicilioP"></span></td>
+                    <td><br><span id="ocupacionP"></span></td>
+                </tbody>
+                <tbody>
+                    <td><label>Madre</label><span id="nombreM"></td>
+                    <td><br><span id="viveM"></span></td>
+                    <td><br><span id="finadoM"></span></td>
+                    <td><br><span id="domicilioM"></span></td>
+                    <td><br><span id="ocupacionM"></span></td>
+                </tbody>
+                <tbody>
+                    <td><label>Esposa(o)</label><span id="nombreEs"></td>
+                    <td><br><span id="viveEs"></span></td>
+                    <td><br><span id="finadoEs"></span></td>
+                    <td><br><span id="domicilioEs"></span></td>
+                    <td><br><span id="ocupacionEs"></span></td>
+                </tbody>
+            </table>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <th><label>Nombre y edades de los hijos: </label></th>
+                    <th><span id="hijos"></span></th>
+                </thead>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h2 class="p-4 mb-2 bg-secondary bg-info text-white" style="text-align:center;">Escolaridad</h2>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Nombre de la escuela</th>
+                        <th>Domicilio</th>
+                        <th>Fecha DE</th>
+                        <th>Fecha A</th>
+                        <th>Años</th>
+                        <th>Título Recibido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Primaria: <span id="primaria"></span></th>
+                        <td><span id="DomicilioPrim"></span></td>
+
+                        <th><span id="fechaPrimaria"></span></th>
+                        <th><span id="fechaPrimaria2"></span></th>
+
+                        <td><span id="años1"></span></td>
+
+                        <td><span id="TituloPrimaria"></span></td>
+
+                    </tr>
+                    <tr>
+                        <th>Secundaria: <span id="Secundaria"></span></th>
+                        <td><span id="DomicilioSec"></span></td>
+
+                        <th><span id="fechaSecundaria"></span></th>
+                        <th><span id="fechaSecundaria2"></span></th>
+
+                        <td><span id="años2"></span></td>
+
+                        <td><span id="TituloSecundaria"></span></td>
+
+
+                    </tr>
+                    <tr>
+                        <th>Preparatoria o Vocacional: <span id="Preparatoria"></span></th>
+                        <td><span id="Domiciliobachi"></span></td>
+
+                        <th><span id="fechaPrepa"></span></th>
+                        <th><span id="fechaPrepa2"></span></th>
+
+                        <td><span id="años3"></span></td>
+
+                        <td><span id="TituloPrepa"></span></td>
+
+                    </tr>
+                    <tr>
+                        <th>Profesional: <span id="Profesional"></span></th>
+                        <td><span id="DomicilioProfe"></span></td>
+
+                        <th><span id="fechaProfec"></span></th>
+                        <th><span id="fechaProfec2"></span></th>
+
+                        <td><span id="años4"></span></td>
+
+                        <td><span id="TituloProfecional"></span></td>
+
+                    </tr>
+                    <tr>
+                        <th>Comercial: <span id="Comercial"></span></th>
+                        <td><span id="DomicilioComercia"></span></td>
+
+                        <th><span id="fechaComer"></span></th>
+                        <th><span id="fechaComer2"></span></th>
+
+                        <td><span id="años5"></span></td>
+
+                        <td><span id="TituloComercial"></span></td>
+                    </tr>
+                    <br>
+                    </tr>
+                    <tr>
+                        <th>Estudios que está efectuando en la actualidad</th>
+                        </center>
+                    </tr>
+                    <tr>
+                        <th>escuela: <span id="EscuelaActual"></span></th>
+                        <th>Horario: <span id="Horario"></span></th>
+                        <th>Curso o carrera: <span id="CursoCarrera"></span></th>
+                        <th>Grado: <span id="Grado"></span></th>
+
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <br>
+        <!-- Javier Conocimientos generales-->
+        <fieldset>
+            <h2 class="p-4 mb-2 bg-info bg-gradient text-white" style="text-align:center;">Conocimientos Generales</h2>
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <th><label for="idiomas">Idiomas que domina</label></th>
+                    <th><label for="funcionesO">Funciones de oficina que domina</label></th>
+                    <th><label for="maquinasO">Máquinas de oficina y/o equip9o de trabajo que sepa manejar</label></th>
+                    <th><label for="otrosT">Otros trabajos o funciones que domina</label></th>
+                </thead>
+                <tbody>
+                    <td><span id="idiomas"></td>
+                    <td><span id="funcionesO"></td>
+                    <td><span id="maquinasO"></td>
+                    <td><span id="otrosT"></td>
+                </tbody>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h2 class="p-4 mb-2 bg-info bg-gradient text-white" style="text-align:center;">Empleo Actual O Anteriores</h2>
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Empleo actual o último</th>
+                        <th>Empleo anterior</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Tiempo que prestó sus servicios:
+                        <td><span id="TimeService"></td>
+    
+                        <td><span id="TimeServiceAnt"></td>
+                    </tr>
+                    <tr>
+                        <th>Nombre de la Empresa:</th>
+                        <td><span id="NomEmpresa"></span></td>
+    
+                        <td><span id="NomEmpresaAnt"></span></td>
+                    </tr>
+                    <tr>
+                        <th>Domicilio:</th>
+                        <td><span id="DomicilioEmpresa"></span></td>
+    
+                        <td><span id="DomicilioEmpresaAnt"></span></td>
+    
+                    </tr>
+                    <tr>
+                        <th>Teléfono:</th>
+                        <td><span id="TelEmpresa"></span></td>
+                        <td><span id="TelEmpresaAnt"></span></td>
+    
+                    </tr>
+                    <tr>
+                        <th>Puesto: Inicial/Final</th>
+                        <td><span id="PuestoInicial1"></span>
+                            <span id="PuestoFinal2"></span>
+                        </td>
+    
+                        <td><span id="PuestoInicialAnt1"></span>
+                            <span id="PuestoFinalAnt2"></span>
+                        </td>
+                    </tr>
+                    <br>
+                    </tr>
+                    <tr>
+                        <th>Sueldo: Inicial/Final</th>
+                        <td><span id="SueldoInicial1"></span>
+                            <span id="SueldoFinal2"></span>
+                        </td>
+    
+                        <td><span id="SueldoInicialAnt1"></span>
+                            <span id="SueldoFinalAnt2"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Motivos de su separación </th>
+                        <td><span id="MotivoSeparacion"></span></td>
+    
+                        <td><span id="MotivoSeparacionAnt"></span></td>
+    
+                    </tr>
+                    <tr>
+                        <th>Nombre de su jefe inmediato</th>
+                        <td><span id="ActDesempeñadas"></span></td>
+    
+                        <td><span id="ActDesempeñadasAnt"></span>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <th>Podemos solicitar informes de usted</th> 
+                    </tr>
+                    <tr>
+                        <th>Si <span id="InformeSi"></span></th>
+                        <th>No <span id="InformeNo"></span></th>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h2 class="p-4 mb-2 bg-info bg-gradient text-white" style="text-align:center;">Referencias Personales</h2>
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <th><label>Nombre</label></th>
+                    <th><label>Domicilio</label></th>
+                    <th><label>Teléfono</label></th>
+                    <th><label>Ocupación</label></th>
+                    <th><label>Tiempo de conocerse</label></th>
+                </thead>
+                <tbody>
+                    <td><span id="nombre1"></span></td>
+                    <td><span id="domicilio1"></span></td>
+                    <td><span id="telefono1"></span></td>
+                    <td><span id="ocupacion1"></span></td>
+                    <td><span id="tiempo1"></span></td>
+                </tbody>
+                <tbody>
+                    <td><span id="nombre2"></span></td>
+                    <td><span id="domicilio2"></span></td>
+                    <td><span id="telefono2"></span></td>
+                    <td><span id="ocupacion2"></span></td>
+                    <td><span id="tiempo2"></span></td>
+                </tbody>
+                <tbody>
+                    <td><span id="nombre3"></span></td>
+                    <td><span id="domicilio3"></span></td>
+                    <td><span id="telefono3"></span></td>
+                    <td><span id="ocupacion3"></span></td>
+                    <td><span id="tiempo3"></span></td>
+                </tbody>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h2 class="p-4 mb-2 bg-info bg-gradient text-white" style="text-align:center;">Datos generales</h2>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>¿Cómo se enteró de este empleo?</th>
+                        <th>Anuncio <span id="InformeSi1"> </th>
+                        <th>Otro medio <span id="InformeNo2"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>¿Tienes familiares y/o amigos que laboren en esta empresa?</th>
+                        <th>No <span id="InformeSi3"></span> </th>
+                        <th>Si <span id="InformeNo4"></span></th>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <th>¿Ha estado Afianzado?</th>
+                        <th>No <span id="InformeSi5"></span> </th>
+                        <th>Si <span id="InformeNo6"></span></th>
+                    </tr>
+                    <tr>
+                        <th>¿Pertenece a algún sindicato?</th>
+                        <th>No <span id="InformeSi7"></span> </th>
+                        <th>Si <span id="InformeNo8"></span></th>
+    
+                    </tr>
+                    <tr>
+                        <th>¿Tiene seguro de vida? </th>
+                        <th>No <span id="InformeSi9"></span> </th>
+                        <th>Si <span id="InformeNo10"></span></th>
+    
+                    </tr>
+                    <tr>
+                        <th>¿Puede viajar?</th>
+                        <th>No <span id="InformeSi11"></span></th>
+                        <th>Si <span id="InformeNo12"></span></th>
+                    </tr>
+                    <br>
+                    </tr>
+                    <tr>
+                        <th>¿Está dispuesto a cambiar de lugar de residencia?</th>
+                        <th>No <span id="InformeSi13"></span></th>
+                        <th>Si <span id="InformeNo14"></span></th>
+                    </tr>
+                    <tr>
+                        <th>¿Fecha en que podría presentarse a trabajar?: <span  id="FechaTrabajar"></span></th>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h2 class="p-4 mb-2 bg-info bg-gradient text-white" style="text-align:center;">Datos económicos</h2>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <th><label>¿Tiene usted otros ingresos?</label></th>
+                    <th><label></label></th>
+                    <th><label>Importe mensual $</label></th>
+                    <th><label>¿Su cónyuge trabaja?</label></th>
+                    <th><label></label></th>
+                    <th><label>Percepción mensual</label></th>
+                </thead>
+                <tbody>
+                    <th><span id="ingresosOpcNo">No</span> <span id="ingresoOpcSi">Si (¿Cuáles?)</span></th>
+                    <th><span id="otrosIngresos"></span></th>
+                    <th><span id="importeM"></span></th>
+                    <th><span id="conyugeTraNo">No </span><span id="conyugeTraSi">Si(¿Dónde?)</span></th>
+                    <th><span id="trabajoConyuge"></span></th>
+                    <th><span id="percepcionM"></span></th>
+                </tbody>
+            </table>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <th><label>¿Vive en casa propia?</label></th>
+                    <th><label></label></th>
+                    <th><label>Importe mensual $</label></th>
+                    <th><label>¿Paga renta?</label></th>
+                    <th><label></label></th>
+                    <th><label>Renta mensual $</label></th>
+                </thead>
+                <tbody>
+                    <th><span id="casaPNo">No<span id="casaPSi">Si</th>
+                    <th><span></th>
+                    <th><span id="importeMensual"></th>
+                    <th><span id="rentaN">No<span id="rentaS">Si</th>
+                    <th><span></th>
+                    <th><span id="rentaM"></th>
+                </tbody>
+            </table>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <th><label>¿Tiene automóvil?</label></th>
+                    <th><label>Placas</label></th>
+                    <th><label>Marca</label></th>
+                    <th><label>Modelo</label></th>
+                    <th><label>¿Tienes deudas?</label></th>
+                    <th><label></label></th>
+                    <th><label>Importe $</label></th>
+                </thead>
+                <tbody>
+                    <td><span id="autoN">No<span id="autoS">Si</span></td>
+                    <td><span id="placasA"></span></td>
+                    <td><span id="marcaA"></span></td>
+                    <td><span id="modeloA"></span></td>
+                    <td><span id="deudasN">No</span><span id="dudasS">Si(¿De qué clase?)</span></td>
+                    <td><span id="claseA"></span></td>
+                    <td><span id="importeD"></span></td>
+                </tbody>
+            </table>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <th><label>Ingresos $</label></th>
+                    <th><span id="ingreso"></span></th>
+                    <th><label>Ahorros $</label></th>
+                    <th><span id="ahorro"></span></th>
+                    <th><label>¿Cuánto abona mensualmente? $</label></th>
+                    <th><span id="abonoM"></span></th>
+                </thead>
+            </table>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <th><label>Egresos $</label></th>
+                    <th><span id="egresos"></span></th>
+                    <th><label>Total (gastos mensuales) $</label></th>
+                    <th><span id="totalGastos"></span></th>
+                </thead>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h2 class="titulotable" style="text-align:center;"></h2>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <th><label>Observaciones</label></th>
+                    <th><span id="observaciones"></span></th>
+                    <th><label>Certifico que los datos proporcionados son correctos y autorizo a la empresa para que certifique a su entera satisfacción</label></th>
+                    <th><span id="firma"></span></th>
+                </thead>
+            </table>
+        </fieldset>
+        <button id="descargar">Exportar JSON</button>
+        <script>
+             const guardarArchivoDeTexto = (contenido, nombre) => {
+                const a = document.createElement("a");
+                const archivo = new Blob([contenido], { type: 'text/plain' });
+                const url = URL.createObjectURL(archivo);
+                a.href = url;
+                a.download = nombre;
+                a.click();
+                URL.revokeObjectURL(url);
+            }
+            
+            const $botonDescargar = document.querySelector("#descargar");
+            $botonDescargar.onclick = () => {
+                guardarArchivoDeTexto(nuevosdeEmpleo+nuevoDatosP+nuevaDocumentacion+nuevoestadoYHabitos+nuevoDatosFamiliares+nuevoDatosEscolaridad+nuevoConocimientosGenerales+nuevoDatosEmpleosActualOAnterior+nuevaReferenciaPersonal+nuevaReferenciaPersonal2+nuevaDatosEconomicos, "archivo.txt");
+            }
+
+            //----------------------------DATOS DE SOLICITUD DE EMPLEO----------------------------
+
+            document.getElementById("solicitudEmp").innerHTML = localStorage.getItem("solicitudEmp");
+            document.getElementById("fecha").innerHTML = localStorage.getItem("fecha");
+            document.getElementById("sueldoMensualD").innerHTML = localStorage.getItem("sueldoMensualD");
+            document.getElementById("sueldoMensualA").innerHTML = localStorage.getItem("sueldoMensualA");
+            document.getElementById("fechaContratacion").innerHTML = localStorage.getItem("fechaContratacion");
+            const datosDeEmpleo = {
+                solicitudDeEmpleo: localStorage.getItem("solicitudEmp"),
+                fecha: localStorage.getItem("fecha"),
+                sueldoMensualD: localStorage.getItem("sueldoMensualD"),
+                sueldoMensualA: localStorage.getItem("sueldoMensualA"),
+                fechaContratacion: localStorage.getItem("fechaContratacion")
+            }
+            const nuevosdeEmpleo = JSON.stringify(datosDeEmpleo);
+            
+            //----------------------------DATOS DE SOLISITUD DE EMPLEO----------------------------
+
+            //----------------------------DATOS PERSONALES-------------------------------------------------
+            document.getElementById("APaterno").innerHTML = localStorage.getItem("APaterno");
+            document.getElementById("Amaterno").innerHTML = localStorage.getItem("Amaterno");
+            document.getElementById("nombres").innerHTML = localStorage.getItem("nombres");
+            document.getElementById("edad").innerHTML = localStorage.getItem("edad");
+            document.getElementById("Domicilio").innerHTML = localStorage.getItem("Domicilio");
+            document.getElementById("Colonia").innerHTML = localStorage.getItem("Colonia");
+            document.getElementById("CodPostal").innerHTML = localStorage.getItem("CodPostal");
+
+            const datosP = {
+                apellidoP: localStorage.getItem("APaterno"),
+                apellidoM: localStorage.getItem("Amaterno"),
+                nombreP: localStorage.getItem("nombres"),
+                edadP: localStorage.getItem("edad"),
+                domicilioP: localStorage.getItem("Domicilio"),
+                colonia: localStorage.getItem("Colonia"),
+                codPostal: localStorage.getItem("CodPostal")
+            }
+
+            const nuevoDatosP = JSON.stringify(datosP);
+            //----------------------------DATOS PERSONALES-------------------------------------------------
+
+            //----------------------------DOCUMENTACION-------------------------------------------------
+            document.getElementById("curp").innerHTML = localStorage.getItem("curp");
+            document.getElementById("afore").innerHTML = localStorage.getItem("afore");
+            document.getElementById("rfc").innerHTML = localStorage.getItem("rfc");
+            document.getElementById("licencia").innerHTML = localStorage.getItem("licencia");
+            document.getElementById("cartilla").innerHTML = localStorage.getItem("cartilla");
+            document.getElementById("pasaporte").innerHTML = localStorage.getItem("pasaporte");
+            document.getElementById("numeroSS").innerHTML = localStorage.getItem("numeroSS");
+            document.getElementById("numLicencia").innerHTML = localStorage.getItem("numLicencia");
+            document.getElementById("docsExtranjero").innerHTML = localStorage.getItem("docsExtranjero");
+
+            const documentacionCampo = {
+                curp: localStorage.getItem("curp"),
+                afore: localStorage.getItem("afore"),
+                rfc: localStorage.getItem("rfc"),
+                licencia: localStorage.getItem("licencia"),
+                cartilla: localStorage.getItem("cartilla"),
+                pasaporte: localStorage.getItem("pasaporte"),
+                numeroSS: localStorage.getItem("numeroSS"),
+                numLicencia: localStorage.getItem("numLicencia"),
+                docsExtranjero: localStorage.getItem("docsExtranjero")
+            }
+
+            const nuevaDocumentacion = JSON.stringify(documentacionCampo);
+            //----------------------------DOCUMENTACION-------------------------------------------------
+
+
+            //----------------------------ESTADO DE SALUD Y HABITOS PERSONALES-------------------------------------------------
+            document.getElementById("SaludActual").innerHTML = localStorage.getItem("SaludActual");
+            document.getElementById("EnferCronica").innerHTML = localStorage.getItem("EnferCronica");
+            document.getElementById("Deporte").innerHTML = localStorage.getItem("Deporte");
+            document.getElementById("PerteneAclub").innerHTML = localStorage.getItem("PerteneAclub");
+            document.getElementById("TiempoLibre").innerHTML = localStorage.getItem("TiempoLibre");
+            document.getElementById("MetaVida").innerHTML = localStorage.getItem("MetaVida");
+
+            const estadoYHabitos = {
+                saludActual: localStorage.getItem("SaludActual"),
+                enferCronica: localStorage.getItem("EnferCronica"),
+                deporte: localStorage.getItem("Deporte"),
+                perteneceAclub: localStorage.getItem("PerteneAclub"),
+                tiempoLibre: localStorage.getItem("TiempoLibre"),
+                metaVida: localStorage.getItem("MetaVida")
+            }
+
+            const nuevoestadoYHabitos = JSON.stringify(estadoYHabitos);
+            //----------------------------ESTADO DE SALUD Y HABITOS PERSONALES-------------------------------------------------
+
+
+//----------------------------DATOS FAMILIARES-------------------------------------------------
+
+            document.getElementById("nombreP").innerHTML = localStorage.getItem("nombreP");
+            document.getElementById("viveP").innerHTML = localStorage.getItem("viveP");
+            document.getElementById("finadoP").innerHTML = localStorage.getItem("finadoP");
+            document.getElementById("domicilioP").innerHTML = localStorage.getItem("domicilioP");
+            document.getElementById("ocupacionP").innerHTML = localStorage.getItem("ocupacionP");
+            document.getElementById("nombreM").innerHTML = localStorage.getItem("nombreM");
+            document.getElementById("viveM").innerHTML = localStorage.getItem("viveM");
+            document.getElementById("finadoM").innerHTML = localStorage.getItem("finadoM");
+            document.getElementById("domicilioM").innerHTML = localStorage.getItem("domicilioM");
+            document.getElementById("ocupacionM").innerHTML = localStorage.getItem("ocupacionM");
+            document.getElementById("nombreEs").innerHTML = localStorage.getItem("nombreEs");
+            document.getElementById("viveEs").innerHTML = localStorage.getItem("viveEs");
+            document.getElementById("finadoEs").innerHTML = localStorage.getItem("finadoEs");
+            document.getElementById("domicilioEs").innerHTML = localStorage.getItem("domicilioEs");
+            document.getElementById("ocupacionEs").innerHTML = localStorage.getItem("ocupacionEs");
+            document.getElementById("hijos").innerHTML = localStorage.getItem("hijos");
+
+            const datosFamiliares = {
+                nombrePadre: localStorage.getItem("nombreP"),
+                vivePadre: localStorage.getItem("viveP"),
+                finadoPadre: localStorage.getItem("finadoP"),
+                domicilioPadre: localStorage.getItem("domicilioP"),
+                ocupacionPadre: localStorage.getItem("ocupacionP"),
+                nombreMadre: localStorage.getItem("nombreM"),
+                viveMadre: localStorage.getItem("viveM"),
+                finadoMadre: localStorage.getItem("finadoM"),
+                domicilioMadre: localStorage.getItem("domicilioM"),
+                ocupacionMadre: localStorage.getItem("ocupacionM"),
+                nombreEs: localStorage.getItem("nombreEs"),
+                viveEs: localStorage.getItem("viveEs"),
+                finadoEs: localStorage.getItem("finadoEs"),
+                domicilioEs: localStorage.getItem("domicilioEs"),
+                ocupacionEs: localStorage.getItem("ocupacionEs"),
+                hijos: localStorage.getItem("hijos")
+            }
+
+            const nuevoDatosFamiliares = JSON.stringify(datosFamiliares);
+//----------------------------DATOS FAMILIARES-------------------------------------------------
+
+
+//----------------------------ESCOLARIDAD-------------------------------------------------
+
+            document.getElementById("primaria").innerHTML = localStorage.getItem("primaria");
+            document.getElementById("DomicilioPrim").innerHTML = localStorage.getItem("DomicilioPrim");
+            document.getElementById("fechaPrimaria").innerHTML = localStorage.getItem("fechaPrimaria");
+            document.getElementById("fechaPrimaria2").innerHTML = localStorage.getItem("fechaPrimaria2");
+            document.getElementById("años1").innerHTML = localStorage.getItem("años1");
+            document.getElementById("TituloPrimaria").innerHTML = localStorage.getItem("TituloPrimaria");
+            document.getElementById("Secundaria").innerHTML = localStorage.getItem("Secundaria");
+            document.getElementById("DomicilioSec").innerHTML = localStorage.getItem("DomicilioSec");
+            document.getElementById("fechaSecundaria").innerHTML = localStorage.getItem("fechaSecundaria");
+            document.getElementById("fechaSecundaria2").innerHTML = localStorage.getItem("fechaSecundaria2");
+            document.getElementById("años2").innerHTML = localStorage.getItem("años2");
+            document.getElementById("TituloSecundaria").innerHTML = localStorage.getItem("TituloSecundaria");
+            document.getElementById("Preparatoria").innerHTML = localStorage.getItem("Preparatoria");
+            document.getElementById("Domiciliobachi").innerHTML = localStorage.getItem("Domiciliobachi");
+            document.getElementById("fechaPrepa").innerHTML = localStorage.getItem("fechaPrepa");
+            document.getElementById("fechaPrepa2").innerHTML = localStorage.getItem("fechaPrepa2");
+
+            
+            document.getElementById("años3").innerHTML = localStorage.getItem("años3");
+            document.getElementById("TituloPrepa").innerHTML = localStorage.getItem("TituloPrepa");
+            document.getElementById("Profesional").innerHTML = localStorage.getItem("Profesional");
+            document.getElementById("DomicilioProfe").innerHTML = localStorage.getItem("DomicilioProfe");
+            document.getElementById("fechaProfec").innerHTML = localStorage.getItem("fechaProfec");
+            document.getElementById("fechaProfec2").innerHTML = localStorage.getItem("fechaProfec2");
+            document.getElementById("años4").innerHTML = localStorage.getItem("años4");
+            document.getElementById("TituloProfecional").innerHTML = localStorage.getItem("TituloProfecional");
+            document.getElementById("Comercial").innerHTML = localStorage.getItem("Comercial");
+            document.getElementById("DomicilioComercia").innerHTML = localStorage.getItem("DomicilioComercia");
+            document.getElementById("fechaComer").innerHTML = localStorage.getItem("fechaComer");
+            document.getElementById("fechaComer2").innerHTML = localStorage.getItem("fechaComer2");
+            document.getElementById("años5").innerHTML = localStorage.getItem("años5");
+            document.getElementById("TituloComercial").innerHTML = localStorage.getItem("TituloComercial");
+            document.getElementById("EscuelaActual").innerHTML = localStorage.getItem("EscuelaActual");
+            document.getElementById("Horario").innerHTML = localStorage.getItem("Horario");
+            document.getElementById("CursoCarrera").innerHTML = localStorage.getItem("CursoCarrera");
+            document.getElementById("Grado").innerHTML = localStorage.getItem("Grado");
+
+            const datosEscolares = {
+                primaria: localStorage.getItem("primaria"),
+                domicilioPrimaria: localStorage.getItem("DomicilioPrim"),
+                fechaPrimaria: localStorage.getItem("fechaPrimaria"),
+                fechaPrimaria2: localStorage.getItem("fechaPrimaria2"),
+                años1: localStorage.getItem("años1"),
+                tituloPrimaria: localStorage.getItem("TituloPrimaria"),
+                secundaria: localStorage.getItem("Secundaria"),
+                domicilioSecundaria: localStorage.getItem("DomicilioSec"),
+                fechaSecundaria: localStorage.getItem("fechaSecundaria"),
+                fechaSecundaria2: localStorage.getItem("fechaSecundaria2"),
+                años2: localStorage.getItem("años2"),
+                tituloSecundaria: localStorage.getItem("TituloSecundaria"),
+                preparatoria: localStorage.getItem("Preparatoria"),
+                domicilioBachillerato: localStorage.getItem("Domiciliobachi"),
+                fechaPrepa: localStorage.getItem("fechaPrepa"),
+                fechaPrepa2: localStorage.getItem("fechaPrepa2"),
+                año3: localStorage.getItem("años3"),
+                tituloPrepa: localStorage.getItem("TituloPrepa"),
+                profesional: localStorage.getItem("Profesional"),
+                domicilioProfe: localStorage.getItem("DomicilioProfe"),
+                fechaProfec: localStorage.getItem("fechaProfec"),
+                fechaProfec2: localStorage.getItem("fechaProfec2"),
+                año4: localStorage.getItem("años4"),
+                tituloProfesional: localStorage.getItem("TituloProfecional"),
+                comercial: localStorage.getItem("Comercial"),
+                domicilioComercial: localStorage.getItem("DomicilioComercia"),
+                fechaComercial: localStorage.getItem("fechaComer"),
+                fechaComercial2: localStorage.getItem("fechaComer2"),
+                años5: localStorage.getItem("años5"),
+                tituloComercial: localStorage.getItem("TituloComercial"),
+                escuelaActual: localStorage.getItem("EscuelaActual"),
+                horario: localStorage.getItem("Horario"),
+                cursoCarrera: localStorage.getItem("CursoCarrera"),
+                grado: localStorage.getItem("Grado")
+            }
+
+            const nuevoDatosEscolaridad = JSON.stringify(datosEscolares);
+//----------------------------DATOS FAMILIARES-------------------------------------------------
+
+//----------------------------CONOCIMIENTOS GENERALES-------------------------------------------------
+            document.getElementById("idiomas").innerHTML = localStorage.getItem("idiomas");
+            document.getElementById("funcionesO").innerHTML = localStorage.getItem("funcionesO");
+            document.getElementById("maquinasO").innerHTML = localStorage.getItem("maquinasO");
+            document.getElementById("otrosT").innerHTML = localStorage.getItem("otrosT");
+
+            const datosConocimientosGenerales = {
+                idiomas: localStorage.getItem("idiomas"),
+                funcionesO: localStorage.getItem("funcionesO"),
+                maquinasO: localStorage.getItem("maquinasO"),
+                otrosT: localStorage.getItem("otrosT"),
+            }
+
+            const nuevoConocimientosGenerales = JSON.stringify(datosConocimientosGenerales);
+//----------------------------CONOCIMIENTOS GENERALES-------------------------------------------------
+
+
+//----------------------------EMPLEO ACTUAL O ANTERIOR-------------------------------------------------
+
+            document.getElementById("TimeService").innerHTML = localStorage.getItem("TimeService");
+            document.getElementById("TimeServiceAnt").innerHTML = localStorage.getItem("TimeServiceAnt");
+            document.getElementById("NomEmpresa").innerHTML = localStorage.getItem("NomEmpresa");
+            document.getElementById("NomEmpresaAnt").innerHTML = localStorage.getItem("NomEmpresaAnt");
+
+            
+            document.getElementById("DomicilioEmpresa").innerHTML = localStorage.getItem("DomicilioEmpresa");
+            document.getElementById("DomicilioEmpresaAnt").innerHTML = localStorage.getItem("DomicilioEmpresaAnt");
+            document.getElementById("TelEmpresa").innerHTML = localStorage.getItem("TelEmpresa");
+            document.getElementById("TelEmpresaAnt").innerHTML = localStorage.getItem("TelEmpresaAnt");
+            document.getElementById("PuestoInicial1").innerHTML = localStorage.getItem("PuestoInicial1");
+            document.getElementById("PuestoFinal2").innerHTML = localStorage.getItem("PuestoFinal2");
+            document.getElementById("PuestoInicialAnt1").innerHTML = localStorage.getItem("PuestoInicialAnt");
+            document.getElementById("PuestoFinalAnt2").innerHTML = localStorage.getItem("PuestoFinalAnt");
+            document.getElementById("SueldoInicial1").innerHTML = localStorage.getItem("SueldoInicial1");
+            document.getElementById("SueldoFinal2").innerHTML = localStorage.getItem("SueldoFinal2");
+            document.getElementById("SueldoInicialAnt1").innerHTML = localStorage.getItem("SueldoInicialAnt1");
+            document.getElementById("SueldoFinalAnt2").innerHTML = localStorage.getItem("SueldoFinalAnt2");
+            document.getElementById("MotivoSeparacion").innerHTML = localStorage.getItem("MotivoSeparacion");
+            document.getElementById("MotivoSeparacionAnt").innerHTML = localStorage.getItem("MotivoSeparacionAnt");
+            document.getElementById("ActDesempeñadas").innerHTML = localStorage.getItem("ActDesempeñadas");
+            document.getElementById("ActDesempeñadasAnt").innerHTML = localStorage.getItem("ActDesempeñadasAnt");
+            document.getElementById("InformeSi").innerHTML = localStorage.getItem("InformeSi");
+            document.getElementById("InformeNo").innerHTML = localStorage.getItem("InformeNo");
+
+            const datosEmpleosActualOAnterior = {
+                TimeService: localStorage.getItem("TimeService"),
+                TimeServiceAnt: localStorage.getItem("TimeServiceAnt"),
+                NomEmpresa: localStorage.getItem("NomEmpresa"),
+                NomEmpresaAnt:localStorage.getItem("NomEmpresaAnt"),
+
+                    
+                DomicilioEmpresa:localStorage.getItem("DomicilioEmpresa"),
+                DomicilioEmpresaAnt:localStorage.getItem("DomicilioEmpresaAnt"),
+                TelEmpresa:localStorage.getItem("TelEmpresa"),
+                TelEmpresaAnt:localStorage.getItem("TelEmpresaAnt"),
+                PuestoInicial1:localStorage.getItem("PuestoInicial1"),
+                PuestoFinal2:localStorage.getItem("PuestoFinal2"),
+                PuestoInicialAnt1:localStorage.getItem("PuestoInicialAnt"),
+                PuestoFinalAnt2:localStorage.getItem("PuestoFinalAnt"),
+                SueldoInicial1:localStorage.getItem("SueldoInicial1"),
+                SueldoFinal2:localStorage.getItem("SueldoFinal2"),
+                SueldoInicialAnt1:localStorage.getItem("SueldoInicialAnt1"),
+                SueldoFinalAnt2:localStorage.getItem("SueldoFinalAnt2"),
+                MotivoSeparacion:localStorage.getItem("MotivoSeparacion"),
+                MotivoSeparacionAnt:localStorage.getItem("MotivoSeparacionAnt"),
+                ActDesempeñadas:localStorage.getItem("ActDesempeñadas"),
+                ActDesempeñadasAnt:localStorage.getItem("ActDesempeñadasAnt"),
+                InformeSi:localStorage.getItem("InformeSi"),
+                InformeNo:localStorage.getItem("InformeNo"),
+            }
+
+            const nuevoDatosEmpleosActualOAnterior = JSON.stringify(datosEmpleosActualOAnterior);
+
+//----------------------------EMPLEO ACTUAL O ANTERIOR-------------------------------------------------
+
+
+//----------------------------REFERENCIAS PERSONALEA-------------------------------------------------
+            document.getElementById("nombre1").innerHTML = localStorage.getItem("nombre1");
+            document.getElementById("domicilio1").innerHTML = localStorage.getItem("domicilio1");
+            document.getElementById("telefono1").innerHTML = localStorage.getItem("telefono1");
+            document.getElementById("ocupacion1").innerHTML = localStorage.getItem("ocupacion1");
+            document.getElementById("tiempo1").innerHTML = localStorage.getItem("tiempo1");
+            document.getElementById("nombre2").innerHTML = localStorage.getItem("nombre2");
+            document.getElementById("domicilio2").innerHTML = localStorage.getItem("domicilio2");
+            document.getElementById("telefono2").innerHTML = localStorage.getItem("telefono2");
+            document.getElementById("ocupacion2").innerHTML = localStorage.getItem("ocupacion2");
+            document.getElementById("tiempo2").innerHTML = localStorage.getItem("tiempo2");
+            document.getElementById("nombre3").innerHTML = localStorage.getItem("nombre3");
+            document.getElementById("domicilio3").innerHTML = localStorage.getItem("domicilio3");
+            document.getElementById("telefono3").innerHTML = localStorage.getItem("telefono3");
+            document.getElementById("ocupacion3").innerHTML = localStorage.getItem("ocupacion3");
+            document.getElementById("tiempo3").innerHTML = localStorage.getItem("tiempo3");
+
+            const datosReferenciaPersonal = {
+                nombre1: localStorage.getItem("nombre1"),
+                domicilio1: localStorage.getItem("domicilio1"),
+                telefono1: localStorage.getItem("telefono1"),
+                ocupacion1: localStorage.getItem("ocupacion1"),
+                tiempo1: localStorage.getItem("tiempo1"),
+                nombre2: localStorage.getItem("nombre2"),
+                domicilio2: localStorage.getItem("domicilio2"),
+                telefono2: localStorage.getItem("telefono2"),
+                ocupacion2: localStorage.getItem("ocupacion2"),
+                tiempo2: localStorage.getItem("tiempo2"),
+                nombre3: localStorage.getItem("nombre3"),
+                domicilio3: localStorage.getItem("domicilio3"),
+                telefono3: localStorage.getItem("telefono3"),
+                ocupacion3: localStorage.getItem("ocupacion3"),
+                tiempo3: localStorage.getItem("tiempo3"),
+            }
+
+            const nuevaReferenciaPersonal = JSON.stringify(datosReferenciaPersonal);
+
+//----------------------------REFERENCIAS PERSONALEA-------------------------------------------------
+
+//----------------------------REFERENCIAS PERSONALEA-------------------------------------------------
+
+            document.getElementById("InformeSi1").innerHTML = localStorage.getItem("InformeSi1");
+            document.getElementById("InformeNo2").innerHTML = localStorage.getItem("InformeNo2");
+            document.getElementById("InformeSi3").innerHTML = localStorage.getItem("InformeSi3");
+            document.getElementById("InformeNo4").innerHTML = localStorage.getItem("InformeNo4");
+            document.getElementById("InformeSi5").innerHTML = localStorage.getItem("InformeSi5");
+            document.getElementById("InformeNo6").innerHTML = localStorage.getItem("InformeNo6");
+            document.getElementById("InformeSi7").innerHTML = localStorage.getItem("InformeSi7");
+            document.getElementById("InformeNo8").innerHTML = localStorage.getItem("InformeNo8");
+            document.getElementById("InformeSi9").innerHTML = localStorage.getItem("InformeSi9");
+            document.getElementById("InformeNo10").innerHTML = localStorage.getItem("InformeNo10");
+            document.getElementById("InformeSi11").innerHTML = localStorage.getItem("InformeSi11");
+            document.getElementById("InformeNo12").innerHTML = localStorage.getItem("InformeNo12");
+            document.getElementById("InformeSi13").innerHTML = localStorage.getItem("InformeSi13");
+            document.getElementById("InformeNo14").innerHTML = localStorage.getItem("InformeNo14");
+            document.getElementById("FechaTrabajar").innerHTML = localStorage.getItem("FechaTrabajar");
+
+            const datosReferenciaPersonal2 = {
+                InformeSi1:localStorage.getItem("InformeSi1"),
+                InformeNo2:localStorage.getItem("InformeNo2"),
+                InformeSi3:localStorage.getItem("InformeSi3"),
+                InformeNo4:localStorage.getItem("InformeNo4"),
+                InformeSi5:localStorage.getItem("InformeSi5"),
+                InformeNo6:localStorage.getItem("InformeNo6"),
+                InformeSi7:localStorage.getItem("InformeSi7"),
+                InformeNo8:localStorage.getItem("InformeNo8"),
+                InformeSi9:localStorage.getItem("InformeSi9"),
+                InformeNo10:localStorage.getItem("InformeNo10"),
+                InformeSi11:localStorage.getItem("InformeSi11"),
+                InformeNo12:localStorage.getItem("InformeNo12"),
+                InformeSi13:localStorage.getItem("InformeSi13"),
+                InformeNo14:localStorage.getItem("InformeNo14"),
+                FechaTrabajar:localStorage.getItem("FechaTrabajar"),
+            }
+
+            const nuevaReferenciaPersonal2 = JSON.stringify(datosReferenciaPersonal2);
+
+
+//----------------------------REFERENCIAS PERSONALEA-------------------------------------------------
+
+//----------------------------DATOS ECONOMICOS-------------------------------------------------
+
+            document.getElementById("ingresosOpcNo").innerHTML = localStorage.getItem("ingresosOpcNo");
+            document.getElementById("ingresoOpcSi").innerHTML = localStorage.getItem("ingresoOpcSi");
+            document.getElementById("otrosIngresos").innerHTML = localStorage.getItem("otrosIngresos");
+            document.getElementById("importeM").innerHTML = localStorage.getItem("importeM");
+            document.getElementById("conyugeTraNo").innerHTML = localStorage.getItem("conyugeTraNo");
+            document.getElementById("conyugeTraSi").innerHTML = localStorage.getItem("conyugeTraSi");
+            document.getElementById("trabajoConyuge").innerHTML = localStorage.getItem("trabajoConyuge");
+            document.getElementById("percepcionM").innerHTML = localStorage.getItem("percepcionM");
+            document.getElementById("casaPNo").innerHTML = localStorage.getItem("casaPNo");
+            document.getElementById("rentaS").innerHTML = localStorage.getItem("rentaS");
+
+            
+            document.getElementById("rentaM").innerHTML = localStorage.getItem("rentaM");
+            document.getElementById("autoN").innerHTML = localStorage.getItem("autoN");
+            document.getElementById("placasA").innerHTML = localStorage.getItem("placasA");
+            document.getElementById("modeloA").innerHTML = localStorage.getItem("modeloA");
+            document.getElementById("deudasN").innerHTML = localStorage.getItem("deudasN");
+            document.getElementById("dudasS").innerHTML = localStorage.getItem("dudasS");
+            document.getElementById("claseA").innerHTML = localStorage.getItem("claseA");
+            document.getElementById("importeD").innerHTML = localStorage.getItem("importeD");
+            document.getElementById("ingreso").innerHTML = localStorage.getItem("ingreso");
+            document.getElementById("ahorro").innerHTML = localStorage.getItem("ahorro");
+            document.getElementById("abonoM").innerHTML = localStorage.getItem("abonoM");
+            document.getElementById("egresos").innerHTML = localStorage.getItem("egresos");
+            document.getElementById("totalGastos").innerHTML = localStorage.getItem("totalGastos");
+
+            const datosEconomicos = {
+                ingresosOpcNo:localStorage.getItem("ingresosOpcNo"),
+                ingresoOpcSi:localStorage.getItem("ingresoOpcSi"),
+                otrosIngresos:localStorage.getItem("otrosIngresos"),
+                importeM:localStorage.getItem("importeM"),
+                conyugeTraNo:localStorage.getItem("conyugeTraNo"),
+                conyugeTraSi:localStorage.getItem("conyugeTraSi"),
+                trabajoConyuge:localStorage.getItem("trabajoConyuge"),
+                percepcionM:localStorage.getItem("percepcionM"),
+                casaPNo:localStorage.getItem("casaPNo"),
+                rentaS:localStorage.getItem("rentaS"),
+
+                
+                rentaM:localStorage.getItem("rentaM"),
+                autoN:localStorage.getItem("autoN"),
+                placasA:localStorage.getItem("placasA"),
+                modeloA:localStorage.getItem("modeloA"),
+                deudasN:localStorage.getItem("deudasN"),
+                dudasS:localStorage.getItem("dudasS"),
+                claseA:localStorage.getItem("claseA"),
+                importeD:localStorage.getItem("importeD"),
+                ingreso:localStorage.getItem("ingreso"),
+                ahorro:localStorage.getItem("ahorro"),
+                abonoM:localStorage.getItem("abonoM"),
+                egresos:localStorage.getItem("egresos"),
+                totalGastos:localStorage.getItem("totalGastos"),
+            }
+
+            const nuevaDatosEconomicos = JSON.stringify(datosEconomicos);
+
+//----------------------------DATOS ECONOMICOS-------------------------------------------------
+
+
+            document.getElementById("observaciones").innerHTML = localStorage.getItem("observaciones");
+            document.getElementById("firma").innerHTML = localStorage.getItem("firma");
+        </script>
+
+</body>
+
+</html>
