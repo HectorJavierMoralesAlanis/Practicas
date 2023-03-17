@@ -571,7 +571,7 @@
                 sueldoMensualA: localStorage.getItem("sueldoMensualA"),
                 fechaContratacion: localStorage.getItem("fechaContratacion")
             }
-            const nuevosdeEmpleo = JSON.stringify(datosDeEmpleo);
+            const nuevosdeEmpleo = JSON.stringify(datosDeEmpleo,null,2);
             
             //----------------------------DATOS DE SOLISITUD DE EMPLEO----------------------------
 
@@ -594,7 +594,7 @@
                 codPostal: localStorage.getItem("CodPostal")
             }
 
-            const nuevoDatosP = JSON.stringify(datosP);
+            const nuevoDatosP = JSON.stringify(datosP,null,2);
             //----------------------------DATOS PERSONALES-------------------------------------------------
 
             //----------------------------DOCUMENTACION-------------------------------------------------
@@ -620,7 +620,7 @@
                 docsExtranjero: localStorage.getItem("docsExtranjero")
             }
 
-            const nuevaDocumentacion = JSON.stringify(documentacionCampo);
+            const nuevaDocumentacion = JSON.stringify(documentacionCampo,null,2);
             //----------------------------DOCUMENTACION-------------------------------------------------
 
 
@@ -641,7 +641,7 @@
                 metaVida: localStorage.getItem("MetaVida")
             }
 
-            const nuevoestadoYHabitos = JSON.stringify(estadoYHabitos);
+            const nuevoestadoYHabitos = JSON.stringify(estadoYHabitos,null,2);
             //----------------------------ESTADO DE SALUD Y HABITOS PERSONALES-------------------------------------------------
 
 
@@ -683,7 +683,7 @@
                 hijos: localStorage.getItem("hijos")
             }
 
-            const nuevoDatosFamiliares = JSON.stringify(datosFamiliares);
+            const nuevoDatosFamiliares = JSON.stringify(datosFamiliares,null,2);
 //----------------------------DATOS FAMILIARES-------------------------------------------------
 
 
@@ -763,7 +763,7 @@
                 grado: localStorage.getItem("Grado")
             }
 
-            const nuevoDatosEscolaridad = JSON.stringify(datosEscolares);
+            const nuevoDatosEscolaridad = JSON.stringify(datosEscolares,null,2);
 //----------------------------DATOS FAMILIARES-------------------------------------------------
 
 //----------------------------CONOCIMIENTOS GENERALES-------------------------------------------------
@@ -779,7 +779,7 @@
                 otrosT: localStorage.getItem("otrosT"),
             }
 
-            const nuevoConocimientosGenerales = JSON.stringify(datosConocimientosGenerales);
+            const nuevoConocimientosGenerales = JSON.stringify(datosConocimientosGenerales,null,2);
 //----------------------------CONOCIMIENTOS GENERALES-------------------------------------------------
 
 
@@ -837,7 +837,7 @@
                 InformeNo:localStorage.getItem("InformeNo"),
             }
 
-            const nuevoDatosEmpleosActualOAnterior = JSON.stringify(datosEmpleosActualOAnterior);
+            const nuevoDatosEmpleosActualOAnterior = JSON.stringify(datosEmpleosActualOAnterior,null,2);
 
 //----------------------------EMPLEO ACTUAL O ANTERIOR-------------------------------------------------
 
@@ -877,7 +877,7 @@
                 tiempo3: localStorage.getItem("tiempo3"),
             }
 
-            const nuevaReferenciaPersonal = JSON.stringify(datosReferenciaPersonal);
+            const nuevaReferenciaPersonal = JSON.stringify(datosReferenciaPersonal,null,2);
 
 //----------------------------REFERENCIAS PERSONALEA-------------------------------------------------
 
@@ -917,7 +917,7 @@
                 FechaTrabajar:localStorage.getItem("FechaTrabajar"),
             }
 
-            const nuevaReferenciaPersonal2 = JSON.stringify(datosReferenciaPersonal2);
+            const nuevaReferenciaPersonal2 = JSON.stringify(datosReferenciaPersonal2,null,2);
 
 
 //----------------------------REFERENCIAS PERSONALEA-------------------------------------------------
@@ -978,7 +978,7 @@
                 totalGastos:localStorage.getItem("totalGastos"),
             }
 
-            const nuevaDatosEconomicos = JSON.stringify(datosEconomicos);
+            const nuevaDatosEconomicos = JSON.stringify(datosEconomicos,null,2);
 
 //----------------------------DATOS ECONOMICOS-------------------------------------------------
 
