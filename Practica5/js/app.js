@@ -7,7 +7,7 @@ function subir(){
     let fechaContra = document.form1.fechaContratacion.value;
     let apaterno = document.form1.APaterno.value;
     let amaterno = document.form1.Amaterno.value;
-    let nombreS = document.form1.nombres.value;
+    let nombreS = document.form1.Nombres.value;
     let edad = document.form1.edad.value;
     let domicilio = document.form1.Domicilio.value;
     let colonia = document.form1.Colonia.value;
@@ -148,7 +148,7 @@ function subir(){
 	var rentaN = document.form1.rentaN.value;
 	var rentaS = document.form1.rentaS.value;
 	var rentaM = document.form1.rentaM.value;
-    var autoN = document.form1.autoN.value;
+    var autoN = document.form1.autoN.value;/*
 	var placasA = document.form1.placasA.value;
     var marcaA = document.form1.marcaA.value;
     var modeloA = document.form1.modeloA.value;
@@ -160,15 +160,15 @@ function subir(){
 	var ahorro = document.form1.ahorro.value;
 	var abonoM = document.form1.abonoM.value;
 	var egresos = document.form1.egresos.value;
-    var totalGastos = document.form1.totalGastos.value;
+    var totalGastos = document.form1.totalGastos.value;/*
     
     //
     var observaciones = document.form1.observaciones.value;
-    var firma = document.form1.firma.value;
+    var firma = document.form1.firma.value;*/
 
 
     //Item Solicitud de Empleo
-    localStorage.setItem("solicitudEmp",solicitudEmpl);
+    localStorage.setItem("solicitudEmpleo",solicitudEmpl);
     localStorage.setItem("fecha",fecha);
     localStorage.setItem("sueldoMensualD", sueldoMensualDe);
     localStorage.setItem("sueldoMensualA", sueldoMensualAu);
@@ -315,7 +315,7 @@ function subir(){
     localStorage.setItem("rentaM", rentaM);
     localStorage.setItem("rentaS", rentaS);
 	localStorage.setItem("rentaN", rentaN);
-    localStorage.setItem("autoN", autoN);
+    localStorage.setItem("autoN", autoN);/*
     localStorage.setItem("placasA", placasA);
     localStorage.setItem("marcaA", marcaA);
     localStorage.setItem("modeloA", modeloA);
@@ -329,35 +329,19 @@ function subir(){
 	localStorage.setItem("ahorro", ahorro);
     localStorage.setItem("abonoM", abonoM);
     localStorage.setItem("egresos", egresos);
-    localStorage.setItem("totalGastos", totalGastos);
+    localStorage.setItem("totalGastos", totalGastos);/*
 
     //
     localStorage.setItem("observaciones", observaciones);
-	localStorage.setItem("firma", firma);
+	localStorage.setItem("firma", firma);*/
 
 
 }
 
 
-const guardarArchivoDeTexto = (contenido, nombre) => {
-    const a = document.createElement("a");
-    const archivo = new Blob([contenido], { type: 'text/plain' });
-    const url = URL.createObjectURL(archivo);
-    a.href = url;
-    a.download = nombre;
-    a.click();
-    URL.revokeObjectURL(url);
-}
 
-const $botonDescargar = document.querySelector("#descargar");
-$botonDescargar.onclick = () => {
-    guardarArchivoDeTexto(nuevosdeEmpleo+nuevoDatosP+nuevaDocumentacion+nuevoestadoYHabitos+nuevoDatosFamiliares+nuevoDatosEscolaridad+nuevoConocimientosGenerales+nuevoDatosEmpleosActualOAnterior+nuevaReferenciaPersonal+nuevaReferenciaPersonal2+nuevaDatosEconomicos, "archivo.txt");
-}
 
-//----------------------------DATOS DE SOLICITUD DE EMPLEO--------------------------
-
-const aux = document.querySelector("#solicitudEmp")
-aux.innerHTML = localStorage.getItem("solicitudEmp");
+document.getElementById("solicitudEmp").innerHTML = localStorage.getItem("solicitudEmpleo");
 document.getElementById("fecha").innerHTML = localStorage.getItem("fecha");
 document.getElementById("sueldoMensualD").innerHTML = localStorage.getItem("sueldoMensualD");
 document.getElementById("sueldoMensualA").innerHTML = localStorage.getItem("sueldoMensualA");
@@ -383,7 +367,7 @@ document.getElementById("docsExtranjero").innerHTML = localStorage.getItem("docs
 document.getElementById("SaludActual").innerHTML = localStorage.getItem("SaludActual");
 document.getElementById("EnferCronica").innerHTML = localStorage.getItem("EnferCronica");
 document.getElementById("Deporte").innerHTML = localStorage.getItem("Deporte");
-document.getElementById("PerteneAclub").innerHTML = localStorage.getItem("PerteneAclub");
+document.getElementById("PerteneAclub").innerHTML = localStorage.getItem("perteneAclub");
 document.getElementById("TiempoLibre").innerHTML = localStorage.getItem("tiempoLibre");
 document.getElementById("MetaVida").innerHTML = localStorage.getItem("metaVida");
 
@@ -466,7 +450,7 @@ document.getElementById("ActDesempenadasAnt").innerHTML = localStorage.getItem("
 document.getElementById("InformeSi").innerHTML = localStorage.getItem("InformeSi");
 document.getElementById("InformeNo").innerHTML = localStorage.getItem("InformeNo");
 
-document.getElementById("nombre1").innerHTML = localStorage.getItem("nombre1");
+document.getElementById("nombre1").innerHTML = localStorage.getItem("nombre1");              
 document.getElementById("domicilio1").innerHTML = localStorage.getItem("domicilio1");
 document.getElementById("telefono1").innerHTML = localStorage.getItem("telefono1");
 document.getElementById("ocupacion1").innerHTML = localStorage.getItem("ocupacion1");
@@ -510,7 +494,7 @@ document.getElementById("casaPNo").innerHTML = localStorage.getItem("casaPNo");
 document.getElementById("importeMensual").innerHTML = localStorage.getItem("importeMensual");
 document.getElementById("rentaN").innerHTML = localStorage.getItem("rentaN");
 document.getElementById("rentaM").innerHTML = localStorage.getItem("rentaM");
-document.getElementById("autoN").innerHTML = localStorage.getItem("autoN");
+document.getElementById("autoN").innerHTML = localStorage.getItem("autoN");/*
 document.getElementById("placasA").innerHTML = localStorage.getItem("placasA");
 document.getElementById("marcaA").innerHTML = localStorage.getItem("marcaA");
 document.getElementById("modeloA").innerHTML = localStorage.getItem("modeloA");
@@ -522,17 +506,196 @@ document.getElementById("ingreso").innerHTML = localStorage.getItem("ingreso");
 document.getElementById("ahorro").innerHTML = localStorage.getItem("ahorro");
 document.getElementById("abonoM").innerHTML = localStorage.getItem("abonoM");
 document.getElementById("egresos").innerHTML = localStorage.getItem("egresos");
-document.getElementById("totalGastos").innerHTML = localStorage.getItem("totalGastos");
+document.getElementById("totalGastos").innerHTML = localStorage.getItem("totalGastos");/*
 
 document.getElementById("observaciones").innerHTML = localStorage.getItem("observaciones");
-document.getElementById("firma").innerHTML = localStorage.getItem("firma");
+document.getElementById("firma").innerHTML = localStorage.getItem("firma");*/
 
 
-const datosDeEmpleo = {
+const datosdeEmpleo = {
     solicitudDeEmpleo: localStorage.getItem("solicitudEmp"),
     fecha: localStorage.getItem("fecha"),
     sueldoMensualD: localStorage.getItem("sueldoMensualD"),
     sueldoMensualA: localStorage.getItem("sueldoMensualA"),
-    fechaContratacion: localStorage.getItem("fechaContratacion")
+    fechaContratacion: localStorage.getItem("fechaContratacion"),
+
+    apellidoP: localStorage.getItem("APaterno"),
+    apellidoM: localStorage.getItem("Amaterno"),
+    nombreP: localStorage.getItem("nombres"),
+    edadP: localStorage.getItem("edad"),
+    domicilioP: localStorage.getItem("Domicilio"),
+    colonia: localStorage.getItem("Colonia"),
+    codPostal: localStorage.getItem("CodPostal"),
+
+    curp: localStorage.getItem("curp"),
+    afore: localStorage.getItem("afore"),
+    rfc: localStorage.getItem("rfc"),
+    licencia: localStorage.getItem("licencia"),
+    cartilla: localStorage.getItem("cartilla"),
+    pasaporte: localStorage.getItem("pasaporte"),
+    numeroSS: localStorage.getItem("numeroSS"),
+    numLicencia: localStorage.getItem("numLicencia"),
+    docsExtranjero: localStorage.getItem("docsExtranjero"),
+
+    saludActual: localStorage.getItem("SaludActual"),
+    enferCronica: localStorage.getItem("EnferCronica"),
+    deporte: localStorage.getItem("Deporte"),
+    perteneceAclub: localStorage.getItem("PerteneAclub"),
+    tiempoLibre: localStorage.getItem("TiempoLibre"),
+    metaVida: localStorage.getItem("MetaVida"),
+
+    nombrePadre: localStorage.getItem("nombreP"),
+    vivePadre: localStorage.getItem("viveP"),
+    finadoPadre: localStorage.getItem("finadoP"),
+    domicilioPadre: localStorage.getItem("domicilioP"),
+    ocupacionPadre: localStorage.getItem("ocupacionP"),
+    nombreMadre: localStorage.getItem("nombreM"),
+    viveMadre: localStorage.getItem("viveM"),
+    finadoMadre: localStorage.getItem("finadoM"),
+    domicilioMadre: localStorage.getItem("domicilioM"),
+    ocupacionMadre: localStorage.getItem("ocupacionM"),
+    nombreEs: localStorage.getItem("nombreEs"),
+    viveEs: localStorage.getItem("viveEs"),
+    finadoEs: localStorage.getItem("finadoEs"),
+    domicilioEs: localStorage.getItem("domicilioEs"),
+    ocupacionEs: localStorage.getItem("ocupacionEs"),
+    hijos: localStorage.getItem("hijos"),
+
+    primaria: localStorage.getItem("primaria"),
+    domicilioPrimaria: localStorage.getItem("DomicilioPrim"),
+    fechaPrimaria: localStorage.getItem("fechaPrimaria"),
+    fechaPrimaria2: localStorage.getItem("fechaPrimaria2"),
+    anios1: localStorage.getItem("anios1"),
+    tituloPrimaria: localStorage.getItem("TituloPrimaria"),
+    secundaria: localStorage.getItem("Secundaria"),
+    domicilioSecundaria: localStorage.getItem("DomicilioSec"),
+    fechaSecundaria: localStorage.getItem("fechaSecundaria"),
+    fechaSecundaria2: localStorage.getItem("fechaSecundaria2"),
+    anios2: localStorage.getItem("anios2"),
+    tituloSecundaria: localStorage.getItem("TituloSecundaria"),
+    preparatoria: localStorage.getItem("Preparatoria"),
+    domicilioBachillerato: localStorage.getItem("Domiciliobachi"),
+    fechaPrepa: localStorage.getItem("fechaPrepa"),
+    fechaPrepa2: localStorage.getItem("fechaPrepa2"),
+    anio3: localStorage.getItem("anios3"),
+    tituloPrepa: localStorage.getItem("TituloPrepa"),
+    profesional: localStorage.getItem("Profesional"),
+    domicilioProfe: localStorage.getItem("DomicilioProfe"),
+    fechaProfec: localStorage.getItem("fechaProfec"),
+    fechaProfec2: localStorage.getItem("fechaProfec2"),
+    anio4: localStorage.getItem("anios4"),
+    tituloProfesional: localStorage.getItem("TituloProfecional"),
+    comercial: localStorage.getItem("Comercial"),
+    domicilioComercial: localStorage.getItem("DomicilioComercia"),
+    fechaComercial: localStorage.getItem("fechaComer"),
+    fechaComercial2: localStorage.getItem("fechaComer2"),
+    anios5: localStorage.getItem("anios5"),
+    tituloComercial: localStorage.getItem("TituloComercial"),
+    escuelaActual: localStorage.getItem("EscuelaActual"),
+    horario: localStorage.getItem("Horario"),
+    cursoCarrera: localStorage.getItem("CursoCarrera"),
+    grado: localStorage.getItem("Grado"),
+
+    idiomas: localStorage.getItem("idiomas"),
+    funcionesO: localStorage.getItem("funcionesO"),
+    maquinasO: localStorage.getItem("maquinasO"),
+    otrosT: localStorage.getItem("otrosT"),
+
+    TimeService: localStorage.getItem("TimeService"),
+    TimeServiceAnt: localStorage.getItem("TimeServiceAnt"),
+    NomEmpresa: localStorage.getItem("NomEmpresa"),
+    NomEmpresaAnt:localStorage.getItem("NomEmpresaAnt"),
+
+    DomicilioEmpresa:localStorage.getItem("DomicilioEmpresa"),
+    DomicilioEmpresaAnt:localStorage.getItem("DomicilioEmpresaAnt"),
+    TelEmpresa:localStorage.getItem("TelEmpresa"),
+    TelEmpresaAnt:localStorage.getItem("TelEmpresaAnt"),
+    PuestoInicial1:localStorage.getItem("PuestoInicial1"),
+    PuestoFinal2:localStorage.getItem("PuestoFinal2"),
+    PuestoInicialAnt1:localStorage.getItem("PuestoInicialAnt"),
+    PuestoFinalAnt2:localStorage.getItem("PuestoFinalAnt"),
+    SueldoInicial1:localStorage.getItem("SueldoInicial1"),
+    SueldoFinal2:localStorage.getItem("SueldoFinal2"),
+    SueldoInicialAnt1:localStorage.getItem("SueldoInicialAnt1"),
+    SueldoFinalAnt2:localStorage.getItem("SueldoFinalAnt2"),
+    MotivoSeparacion:localStorage.getItem("MotivoSeparacion"),
+    MotivoSeparacionAnt:localStorage.getItem("MotivoSeparacionAnt"),
+    ActDesempenadas:localStorage.getItem("ActDesempemnadas"),
+    ActDesempenadasAnt:localStorage.getItem("ActDesempenadasAnt"),
+    InformeSi:localStorage.getItem("InformeSi"),
+    InformeNo:localStorage.getItem("InformeNo"),
+
+    nombre1: localStorage.getItem("nombre1"),
+    domicilio1: localStorage.getItem("domicilio1"),
+    telefono1: localStorage.getItem("telefono1"),
+    ocupacion1: localStorage.getItem("ocupacion1"),
+    tiempo1: localStorage.getItem("tiempo1"),
+    nombre2: localStorage.getItem("nombre2"),
+    domicilio2: localStorage.getItem("domicilio2"),
+    telefono2: localStorage.getItem("telefono2"),
+    ocupacion2: localStorage.getItem("ocupacion2"),
+    tiempo2: localStorage.getItem("tiempo2"),
+    nombre3: localStorage.getItem("nombre3"),
+    domicilio3: localStorage.getItem("domicilio3"),
+    telefono3: localStorage.getItem("telefono3"),
+    ocupacion3: localStorage.getItem("ocupacion3"),
+    tiempo3: localStorage.getItem("tiempo3"),
+
+    InformeSi1:localStorage.getItem("InformeSi1"),
+    InformeNo2:localStorage.getItem("InformeNo2"),
+    InformeSi3:localStorage.getItem("InformeSi3"),
+    InformeNo4:localStorage.getItem("InformeNo4"),
+    InformeSi5:localStorage.getItem("InformeSi5"),
+    InformeNo6:localStorage.getItem("InformeNo6"),
+    InformeSi7:localStorage.getItem("InformeSi7"),
+    InformeNo8:localStorage.getItem("InformeNo8"),
+    InformeSi9:localStorage.getItem("InformeSi9"),
+    InformeNo10:localStorage.getItem("InformeNo10"),
+    InformeSi11:localStorage.getItem("InformeSi11"),
+    InformeNo12:localStorage.getItem("InformeNo12"),
+    InformeSi13:localStorage.getItem("InformeSi13"),
+    InformeNo14:localStorage.getItem("InformeNo14"),
+    FechaTrabajar:localStorage.getItem("FechaTrabajar"),
+
+    ingresosOpcNo:localStorage.getItem("ingresosOpcNo"),
+    ingresoOpcSi:localStorage.getItem("ingresoOpcSi"),
+    otrosIngresos:localStorage.getItem("otrosIngresos"),
+    importeM:localStorage.getItem("importeM"),
+    conyugeTraNo:localStorage.getItem("conyugeTraNo"),
+    conyugeTraSi:localStorage.getItem("conyugeTraSi"),
+    trabajoConyuge:localStorage.getItem("trabajoConyuge"),
+    percepcionM:localStorage.getItem("percepcionM"),
+    casaPNo:localStorage.getItem("casaPNo"),
+    rentaS:localStorage.getItem("rentaS"),
+
+    
+    rentaM:localStorage.getItem("rentaM"),
+    autoN:localStorage.getItem("autoN"),
+    placasA:localStorage.getItem("placasA"),
+    modeloA:localStorage.getItem("modeloA"),
+    deudasN:localStorage.getItem("deudasN"),
+    dudasS:localStorage.getItem("dudasS"),
+    claseA:localStorage.getItem("claseA"),
+    importeD:localStorage.getItem("importeD"),
+    ingreso:localStorage.getItem("ingreso"),
+    ahorro:localStorage.getItem("ahorro"),
+    abonoM:localStorage.getItem("abonoM"),
+    egresos:localStorage.getItem("egresos"),
+    totalGastos:localStorage.getItem("totalGastos"),
 }
-const nuevosdeEmpleo = JSON.stringify(datosDeEmpleo,null,2);
+const nuevosdeEmpleo = JSON.stringify(datosdeEmpleo,null,2);
+
+const guardarArchivoDeTexto = (contenido, nombre) => {
+    const a = document.createElement("a");
+    const archivo = new Blob([contenido], { type: 'text/plain' });
+    const url = URL.createObjectURL(archivo);
+    a.href = url;
+    a.download = nombre;
+    a.click();
+    URL.revokeObjectURL(url);
+}
+
+const $botonDescargar = document.querySelector("#descargar");
+$botonDescargar.onclick = () => {
+    guardarArchivoDeTexto(nuevosdeEmpleo, "archivo.txt");
+}
