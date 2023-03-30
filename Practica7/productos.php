@@ -13,15 +13,17 @@
         <table class="table table-light table-striped-columns">
             <thead>
                 <tr>
+                    <th width="200">Id</th>
                     <th width="200">Descripcion</th>
                     <th width="200">Precio de venta</th>
                     <th width="200">Precio de compra</th>
-                    <th width="200">Categorias</th>
+                    <th width="200">Categoria del producto</th>
                 </tr>
             </thead>
             <tbody>
                 <?php foreach($usuarios as $id => $user){?>
                     <tr>
+                        <td><?php echo $user['id']?></td>
                         <td><?php echo $user['descripcion']?></td>
                         <td><?php echo $user['precio_venta']?></td>
                         <td><?php echo $user['precio_compra']?></td>

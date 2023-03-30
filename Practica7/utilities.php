@@ -1,5 +1,7 @@
 <?php
     include('./conexion.php');
+
+    //Funcion para obtener todas las categorias
     function getAll(){
         global $pdo;
 
@@ -12,6 +14,8 @@
 
         return $results;
     }
+
+    //Funcion para obtner todas los productos
     function getAllProductos(){
         global $pdo;
 
@@ -24,18 +28,22 @@
 
         return $results;
     }
+
+    //Funcion para agregar categoria
     function addCategoria($categoria,$descripcion){
         global $pdo;
 
-        $sql = "INSERT INTO categoria VALUES('$categoria','$descripcion')";
+        $sql = "INSERT INTO categoria VALUES(' ','$categoria','$descripcion')";
 
         $statement = $pdo->prepare($sql);
         $statement->execute();
     }
-    function addProductoCategoria($descripcion,$precio_venta,$precio_compra,$categoria_producto){
+
+    //Funcion para agregar productos
+    function addProductoCategoria($descripcionP,$precio_venta,$precio_compra,$categoria_producto){
         global $pdo;
 
-        $sql = "INSERT INTO productosl VALUES('$descripcion','$precio_venta','$precio_compra','$categoria_producto')";
+        $sql = "INSERT INTO productosl VALUES(' ','$descripcionP','$precio_venta','$precio_compra','$categoria_producto')";
 
         $statement = $pdo -> prepare($sql);
         $statement->execute();

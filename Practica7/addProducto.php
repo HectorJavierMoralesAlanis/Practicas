@@ -20,32 +20,35 @@
         <br>
         <form method="POST" action="./addProducto.php">
             <br>
+            <!-- Descripcion del producto-->
             <div>
                 <label for="descripcionP" class="form-label">Ingresa la descripcion del producto</label>
                 <br>
                 <input id="descripcionP" name="descripcionP" class="form-control">
             </div>
+            <!-- Ingresa el precio de venta-->
             <div>
                 <label for="precio_venta" class="form-label">Ingresa el precio de venta</label>
                 <br>
                 <input id="precio_venta" name="precio_venta" class="form-control">
             </div>
+            <!-- Ingresa el precio de compra-->
             <div>
-                <label for="precio_compra" class="form-label">Inresa el precio de compra</label>
+                <label for="precio_compra" class="form-label">Ingresa el precio de compra</label>
                 <br>
                 <input id="precio_compra" name="precio_compra" class="form-control">
             </div>
             <div>
-                <label for="categoria_producto" class="form-label">Seleccione la categoria</label>
-                <br>
-                <select class="form-select" aria-label="Default select example">
+                <label class="form-label">Seleccione la categoria</label>
+                <select name="categoria_producto" class="form-select" aria-label="Default select example">
                     <option selected>Categorias</option>
-                    <?php foreach($usuarios as $id =>$user){?>
-                        <option id="categoria_producto" name="categoria_producto" value="1"><?php echo $user['categoria']?></option>
+                    <?php foreach($usuarios as $id => $user){?>
+                    <option value="<?php echo $user['categoria']?>"><?php echo $user['categoria']?></option>
                     <?php }?>
                 </select>
             </div>
             <br>
+            <!--Boton guardar-->
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                 <button type="submit" class="btn btn-primary me-md-2">Guardar</button>
             </div>

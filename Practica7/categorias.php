@@ -15,6 +15,7 @@
         <table class="table table-light table-striped-columns">
             <thead>
                 <tr>
+                    <th width="200">Id</th>
                     <th width="200">Nombre</th>
                     <th width="200">Descripcion</th>
                 </tr>
@@ -22,6 +23,7 @@
             <tbody>
                 <?php foreach($usuarios as $id => $user){?>
                     <tr>
+                        <td><?php echo $user['id']?></td>
                         <td><?php echo $user['categoria']?></td>
                         <td><?php echo $user['descripcion']?></td>
                     </tr>
