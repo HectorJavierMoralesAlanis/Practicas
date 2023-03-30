@@ -2,7 +2,10 @@
 include_once('./utilities.php');
 
 if(isset($_POST['categoria'])&&isset($_POST['descripcion'])){
-    addCategoria($_POST['categoria'],$_POST['descripcion']);
+    $categoria1= $_REQUEST['categoria'];
+    $descripcion1=$_REQUEST['descripcion'];
+    echo $categoria1;
+    addCategoria($categoria1,$descripcion1);
 }
 ?>
 <html>
